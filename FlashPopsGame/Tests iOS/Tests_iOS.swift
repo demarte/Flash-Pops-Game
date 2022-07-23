@@ -1,13 +1,13 @@
 //
-//  FlashPopsGameUITests.swift
-//  FlashPopsGameUITests
+//  Tests_iOS.swift
+//  Tests iOS
 //
 //  Created by Ivan De Martino on 7/23/22.
 //
 
 import XCTest
 
-class FlashPopsGameUITests: XCTestCase {
+class Tests_iOS: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

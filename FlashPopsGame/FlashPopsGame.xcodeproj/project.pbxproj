@@ -7,61 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22BE4393288C122D00943F67 /* FlashPopsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE4392288C122D00943F67 /* FlashPopsGameApp.swift */; };
-		22BE4395288C122D00943F67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE4394288C122D00943F67 /* ContentView.swift */; };
-		22BE4397288C122E00943F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BE4396288C122E00943F67 /* Assets.xcassets */; };
-		22BE439A288C122E00943F67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BE4399288C122E00943F67 /* Preview Assets.xcassets */; };
-		22BE43A4288C122F00943F67 /* FlashPopsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE43A3288C122F00943F67 /* FlashPopsGameTests.swift */; };
-		22BE43AE288C122F00943F67 /* FlashPopsGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE43AD288C122F00943F67 /* FlashPopsGameUITests.swift */; };
-		22BE43B0288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE43AF288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift */; };
+		226CBD59288C14F500CCD797 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD58288C14F500CCD797 /* Tests_iOS.swift */; };
+		226CBD5B288C14F500CCD797 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD5A288C14F500CCD797 /* Tests_iOSLaunchTests.swift */; };
+		226CBD65288C14F500CCD797 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD64288C14F500CCD797 /* Tests_macOS.swift */; };
+		226CBD67288C14F500CCD797 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD66288C14F500CCD797 /* Tests_macOSLaunchTests.swift */; };
+		226CBD68288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */; };
+		226CBD69288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */; };
+		226CBD6A288C14F500CCD797 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD41288C14F300CCD797 /* ContentView.swift */; };
+		226CBD6B288C14F500CCD797 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD41288C14F300CCD797 /* ContentView.swift */; };
+		226CBD6C288C14F500CCD797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226CBD42288C14F500CCD797 /* Assets.xcassets */; };
+		226CBD6D288C14F500CCD797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226CBD42288C14F500CCD797 /* Assets.xcassets */; };
+		226CBD7E288C180100CCD797 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD7D288C180100CCD797 /* Sidebar.swift */; };
+		226CBD7F288C180100CCD797 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD7D288C180100CCD797 /* Sidebar.swift */; };
+		226CBD81288C1EA600CCD797 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD80288C1EA600CCD797 /* Store.swift */; };
+		226CBD82288C1EA600CCD797 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD80288C1EA600CCD797 /* Store.swift */; };
+		226CBD8A288C205100CCD797 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 226CBD88288C205100CCD797 /* categories.json */; };
+		226CBD8B288C205100CCD797 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 226CBD88288C205100CCD797 /* categories.json */; };
+		226CBD8E288C205C00CCD797 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 226CBD8C288C205C00CCD797 /* movies.json */; };
+		226CBD8F288C205C00CCD797 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 226CBD8C288C205C00CCD797 /* movies.json */; };
+		226CBD94288C20F900CCD797 /* MediaCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD93288C20F900CCD797 /* MediaCategory.swift */; };
+		226CBD95288C20F900CCD797 /* MediaCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD93288C20F900CCD797 /* MediaCategory.swift */; };
+		226CBD97288C214600CCD797 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD96288C214600CCD797 /* Level.swift */; };
+		226CBD98288C214600CCD797 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD96288C214600CCD797 /* Level.swift */; };
+		226CBD9A288C218700CCD797 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD99288C218700CCD797 /* Media.swift */; };
+		226CBD9B288C218700CCD797 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD99288C218700CCD797 /* Media.swift */; };
+		226CBD9E288C232300CCD797 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD9D288C232300CCD797 /* FileService.swift */; };
+		226CBD9F288C232300CCD797 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD9D288C232300CCD797 /* FileService.swift */; };
+		226CBDA2288C2D8000CCD797 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */; };
+		226CBDA3288C2D8000CCD797 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22BE43A0288C122F00943F67 /* PBXContainerItemProxy */ = {
+		226CBD55288C14F500CCD797 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 22BE4387288C122D00943F67 /* Project object */;
+			containerPortal = 226CBD3B288C14F300CCD797 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 22BE438E288C122D00943F67;
-			remoteInfo = FlashPopsGame;
+			remoteGlobalIDString = 226CBD46288C14F500CCD797;
+			remoteInfo = "FlashPopsGame (iOS)";
 		};
-		22BE43AA288C122F00943F67 /* PBXContainerItemProxy */ = {
+		226CBD61288C14F500CCD797 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 22BE4387288C122D00943F67 /* Project object */;
+			containerPortal = 226CBD3B288C14F300CCD797 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 22BE438E288C122D00943F67;
-			remoteInfo = FlashPopsGame;
+			remoteGlobalIDString = 226CBD4C288C14F500CCD797;
+			remoteInfo = "FlashPopsGame (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22BE438F288C122D00943F67 /* FlashPopsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashPopsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22BE4392288C122D00943F67 /* FlashPopsGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameApp.swift; sourceTree = "<group>"; };
-		22BE4394288C122D00943F67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		22BE4396288C122E00943F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22BE4399288C122E00943F67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		22BE439F288C122F00943F67 /* FlashPopsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashPopsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22BE43A3288C122F00943F67 /* FlashPopsGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameTests.swift; sourceTree = "<group>"; };
-		22BE43A9288C122F00943F67 /* FlashPopsGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashPopsGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22BE43AD288C122F00943F67 /* FlashPopsGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameUITests.swift; sourceTree = "<group>"; };
-		22BE43AF288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameApp.swift; sourceTree = "<group>"; };
+		226CBD41288C14F300CCD797 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		226CBD42288C14F500CCD797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		226CBD47288C14F500CCD797 /* FlashPopsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashPopsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		226CBD4D288C14F500CCD797 /* FlashPopsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashPopsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		226CBD4F288C14F500CCD797 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		226CBD54288C14F500CCD797 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226CBD58288C14F500CCD797 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		226CBD5A288C14F500CCD797 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		226CBD60288C14F500CCD797 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226CBD64288C14F500CCD797 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		226CBD66288C14F500CCD797 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		226CBD7D288C180100CCD797 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		226CBD80288C1EA600CCD797 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		226CBD89288C205100CCD797 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/categories.json; sourceTree = "<group>"; };
+		226CBD8D288C205C00CCD797 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/movies.json; sourceTree = "<group>"; };
+		226CBD90288C206600CCD797 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-BR"; path = "pt-BR.lproj/categories.json"; sourceTree = "<group>"; };
+		226CBD91288C207000CCD797 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "pt-BR"; path = "pt-BR.lproj/movies.json"; sourceTree = "<group>"; };
+		226CBD93288C20F900CCD797 /* MediaCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCategory.swift; sourceTree = "<group>"; };
+		226CBD96288C214600CCD797 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		226CBD99288C218700CCD797 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		226CBD9D288C232300CCD797 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		22BE438C288C122D00943F67 /* Frameworks */ = {
+		226CBD44288C14F500CCD797 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BE439C288C122F00943F67 /* Frameworks */ = {
+		226CBD4A288C14F500CCD797 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BE43A6288C122F00943F67 /* Frameworks */ = {
+		226CBD51288C14F500CCD797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226CBD5D288C14F500CCD797 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,179 +112,271 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22BE4386288C122D00943F67 = {
+		226CBD3A288C14F300CCD797 = {
 			isa = PBXGroup;
 			children = (
-				22BE4391288C122D00943F67 /* FlashPopsGame */,
-				22BE43A2288C122F00943F67 /* FlashPopsGameTests */,
-				22BE43AC288C122F00943F67 /* FlashPopsGameUITests */,
-				22BE4390288C122D00943F67 /* Products */,
+				226CBD3F288C14F300CCD797 /* Shared */,
+				226CBD4E288C14F500CCD797 /* macOS */,
+				226CBD57288C14F500CCD797 /* Tests iOS */,
+				226CBD63288C14F500CCD797 /* Tests macOS */,
+				226CBD48288C14F500CCD797 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		22BE4390288C122D00943F67 /* Products */ = {
+		226CBD3F288C14F300CCD797 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				22BE438F288C122D00943F67 /* FlashPopsGame.app */,
-				22BE439F288C122F00943F67 /* FlashPopsGameTests.xctest */,
-				22BE43A9288C122F00943F67 /* FlashPopsGameUITests.xctest */,
+				226CBD84288C1EBD00CCD797 /* Source */,
+				226CBD83288C1EB000CCD797 /* Resources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		226CBD48288C14F500CCD797 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				226CBD47288C14F500CCD797 /* FlashPopsGame.app */,
+				226CBD4D288C14F500CCD797 /* FlashPopsGame.app */,
+				226CBD54288C14F500CCD797 /* Tests iOS.xctest */,
+				226CBD60288C14F500CCD797 /* Tests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22BE4391288C122D00943F67 /* FlashPopsGame */ = {
+		226CBD4E288C14F500CCD797 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				22BE4392288C122D00943F67 /* FlashPopsGameApp.swift */,
-				22BE4394288C122D00943F67 /* ContentView.swift */,
-				22BE4396288C122E00943F67 /* Assets.xcassets */,
-				22BE4398288C122E00943F67 /* Preview Content */,
+				226CBD4F288C14F500CCD797 /* macOS.entitlements */,
 			);
-			path = FlashPopsGame;
+			path = macOS;
 			sourceTree = "<group>";
 		};
-		22BE4398288C122E00943F67 /* Preview Content */ = {
+		226CBD57288C14F500CCD797 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
-				22BE4399288C122E00943F67 /* Preview Assets.xcassets */,
+				226CBD58288C14F500CCD797 /* Tests_iOS.swift */,
+				226CBD5A288C14F500CCD797 /* Tests_iOSLaunchTests.swift */,
 			);
-			path = "Preview Content";
+			path = "Tests iOS";
 			sourceTree = "<group>";
 		};
-		22BE43A2288C122F00943F67 /* FlashPopsGameTests */ = {
+		226CBD63288C14F500CCD797 /* Tests macOS */ = {
 			isa = PBXGroup;
 			children = (
-				22BE43A3288C122F00943F67 /* FlashPopsGameTests.swift */,
+				226CBD64288C14F500CCD797 /* Tests_macOS.swift */,
+				226CBD66288C14F500CCD797 /* Tests_macOSLaunchTests.swift */,
 			);
-			path = FlashPopsGameTests;
+			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		22BE43AC288C122F00943F67 /* FlashPopsGameUITests */ = {
+		226CBD7C288C17ED00CCD797 /* Sidebar */ = {
 			isa = PBXGroup;
 			children = (
-				22BE43AD288C122F00943F67 /* FlashPopsGameUITests.swift */,
-				22BE43AF288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift */,
+				226CBD7D288C180100CCD797 /* Sidebar.swift */,
 			);
-			path = FlashPopsGameUITests;
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		226CBD83288C1EB000CCD797 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				226CBD8C288C205C00CCD797 /* movies.json */,
+				226CBD88288C205100CCD797 /* categories.json */,
+				226CBD42288C14F500CCD797 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		226CBD84288C1EBD00CCD797 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				226CBDA0288C2D6200CCD797 /* Screens */,
+				226CBD9C288C222B00CCD797 /* Store */,
+				226CBD92288C20C300CCD797 /* Model */,
+				226CBD41288C14F300CCD797 /* ContentView.swift */,
+				226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */,
+				226CBD7C288C17ED00CCD797 /* Sidebar */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		226CBD92288C20C300CCD797 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				226CBD93288C20F900CCD797 /* MediaCategory.swift */,
+				226CBD96288C214600CCD797 /* Level.swift */,
+				226CBD99288C218700CCD797 /* Media.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		226CBD9C288C222B00CCD797 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				226CBD80288C1EA600CCD797 /* Store.swift */,
+				226CBD9D288C232300CCD797 /* FileService.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		226CBDA0288C2D6200CCD797 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22BE438E288C122D00943F67 /* FlashPopsGame */ = {
+		226CBD46288C14F500CCD797 /* FlashPopsGame (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22BE43B3288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGame" */;
+			buildConfigurationList = 226CBD70288C14F500CCD797 /* Build configuration list for PBXNativeTarget "FlashPopsGame (iOS)" */;
 			buildPhases = (
-				22BE438B288C122D00943F67 /* Sources */,
-				22BE438C288C122D00943F67 /* Frameworks */,
-				22BE438D288C122D00943F67 /* Resources */,
+				226CBD43288C14F500CCD797 /* Sources */,
+				226CBD44288C14F500CCD797 /* Frameworks */,
+				226CBD45288C14F500CCD797 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FlashPopsGame;
-			productName = FlashPopsGame;
-			productReference = 22BE438F288C122D00943F67 /* FlashPopsGame.app */;
+			name = "FlashPopsGame (iOS)";
+			productName = "FlashPopsGame (iOS)";
+			productReference = 226CBD47288C14F500CCD797 /* FlashPopsGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22BE439E288C122F00943F67 /* FlashPopsGameTests */ = {
+		226CBD4C288C14F500CCD797 /* FlashPopsGame (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22BE43B6288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameTests" */;
+			buildConfigurationList = 226CBD73288C14F500CCD797 /* Build configuration list for PBXNativeTarget "FlashPopsGame (macOS)" */;
 			buildPhases = (
-				22BE439B288C122F00943F67 /* Sources */,
-				22BE439C288C122F00943F67 /* Frameworks */,
-				22BE439D288C122F00943F67 /* Resources */,
+				226CBD49288C14F500CCD797 /* Sources */,
+				226CBD4A288C14F500CCD797 /* Frameworks */,
+				226CBD4B288C14F500CCD797 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				22BE43A1288C122F00943F67 /* PBXTargetDependency */,
 			);
-			name = FlashPopsGameTests;
-			productName = FlashPopsGameTests;
-			productReference = 22BE439F288C122F00943F67 /* FlashPopsGameTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "FlashPopsGame (macOS)";
+			productName = "FlashPopsGame (macOS)";
+			productReference = 226CBD4D288C14F500CCD797 /* FlashPopsGame.app */;
+			productType = "com.apple.product-type.application";
 		};
-		22BE43A8288C122F00943F67 /* FlashPopsGameUITests */ = {
+		226CBD53288C14F500CCD797 /* Tests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22BE43B9288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameUITests" */;
+			buildConfigurationList = 226CBD76288C14F500CCD797 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
 			buildPhases = (
-				22BE43A5288C122F00943F67 /* Sources */,
-				22BE43A6288C122F00943F67 /* Frameworks */,
-				22BE43A7288C122F00943F67 /* Resources */,
+				226CBD50288C14F500CCD797 /* Sources */,
+				226CBD51288C14F500CCD797 /* Frameworks */,
+				226CBD52288C14F500CCD797 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				22BE43AB288C122F00943F67 /* PBXTargetDependency */,
+				226CBD56288C14F500CCD797 /* PBXTargetDependency */,
 			);
-			name = FlashPopsGameUITests;
-			productName = FlashPopsGameUITests;
-			productReference = 22BE43A9288C122F00943F67 /* FlashPopsGameUITests.xctest */;
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 226CBD54288C14F500CCD797 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		226CBD5F288C14F500CCD797 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226CBD79288C14F500CCD797 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				226CBD5C288C14F500CCD797 /* Sources */,
+				226CBD5D288C14F500CCD797 /* Frameworks */,
+				226CBD5E288C14F500CCD797 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				226CBD62288C14F500CCD797 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 226CBD60288C14F500CCD797 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		22BE4387288C122D00943F67 /* Project object */ = {
+		226CBD3B288C14F300CCD797 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					22BE438E288C122D00943F67 = {
+					226CBD46288C14F500CCD797 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
-					22BE439E288C122F00943F67 = {
+					226CBD4C288C14F500CCD797 = {
 						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 22BE438E288C122D00943F67;
 					};
-					22BE43A8288C122F00943F67 = {
+					226CBD53288C14F500CCD797 = {
 						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 22BE438E288C122D00943F67;
+						TestTargetID = 226CBD46288C14F500CCD797;
+					};
+					226CBD5F288C14F500CCD797 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 226CBD4C288C14F500CCD797;
 					};
 				};
 			};
-			buildConfigurationList = 22BE438A288C122D00943F67 /* Build configuration list for PBXProject "FlashPopsGame" */;
+			buildConfigurationList = 226CBD3E288C14F300CCD797 /* Build configuration list for PBXProject "FlashPopsGame" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
-			mainGroup = 22BE4386288C122D00943F67;
-			productRefGroup = 22BE4390288C122D00943F67 /* Products */;
+			mainGroup = 226CBD3A288C14F300CCD797;
+			productRefGroup = 226CBD48288C14F500CCD797 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22BE438E288C122D00943F67 /* FlashPopsGame */,
-				22BE439E288C122F00943F67 /* FlashPopsGameTests */,
-				22BE43A8288C122F00943F67 /* FlashPopsGameUITests */,
+				226CBD46288C14F500CCD797 /* FlashPopsGame (iOS) */,
+				226CBD4C288C14F500CCD797 /* FlashPopsGame (macOS) */,
+				226CBD53288C14F500CCD797 /* Tests iOS */,
+				226CBD5F288C14F500CCD797 /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		22BE438D288C122D00943F67 /* Resources */ = {
+		226CBD45288C14F500CCD797 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BE439A288C122E00943F67 /* Preview Assets.xcassets in Resources */,
-				22BE4397288C122E00943F67 /* Assets.xcassets in Resources */,
+				226CBD8E288C205C00CCD797 /* movies.json in Resources */,
+				226CBD6C288C14F500CCD797 /* Assets.xcassets in Resources */,
+				226CBD8A288C205100CCD797 /* categories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BE439D288C122F00943F67 /* Resources */ = {
+		226CBD4B288C14F500CCD797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226CBD8F288C205C00CCD797 /* movies.json in Resources */,
+				226CBD6D288C14F500CCD797 /* Assets.xcassets in Resources */,
+				226CBD8B288C205100CCD797 /* categories.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226CBD52288C14F500CCD797 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BE43A7288C122F00943F67 /* Resources */ = {
+		226CBD5E288C14F500CCD797 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,49 +386,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22BE438B288C122D00943F67 /* Sources */ = {
+		226CBD43288C14F500CCD797 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BE4395288C122D00943F67 /* ContentView.swift in Sources */,
-				22BE4393288C122D00943F67 /* FlashPopsGameApp.swift in Sources */,
+				226CBD97288C214600CCD797 /* Level.swift in Sources */,
+				226CBD94288C20F900CCD797 /* MediaCategory.swift in Sources */,
+				226CBD9A288C218700CCD797 /* Media.swift in Sources */,
+				226CBDA2288C2D8000CCD797 /* WelcomeScreen.swift in Sources */,
+				226CBD6A288C14F500CCD797 /* ContentView.swift in Sources */,
+				226CBD7E288C180100CCD797 /* Sidebar.swift in Sources */,
+				226CBD9E288C232300CCD797 /* FileService.swift in Sources */,
+				226CBD68288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */,
+				226CBD81288C1EA600CCD797 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BE439B288C122F00943F67 /* Sources */ = {
+		226CBD49288C14F500CCD797 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BE43A4288C122F00943F67 /* FlashPopsGameTests.swift in Sources */,
+				226CBD98288C214600CCD797 /* Level.swift in Sources */,
+				226CBD95288C20F900CCD797 /* MediaCategory.swift in Sources */,
+				226CBD9B288C218700CCD797 /* Media.swift in Sources */,
+				226CBDA3288C2D8000CCD797 /* WelcomeScreen.swift in Sources */,
+				226CBD6B288C14F500CCD797 /* ContentView.swift in Sources */,
+				226CBD7F288C180100CCD797 /* Sidebar.swift in Sources */,
+				226CBD9F288C232300CCD797 /* FileService.swift in Sources */,
+				226CBD69288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */,
+				226CBD82288C1EA600CCD797 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BE43A5288C122F00943F67 /* Sources */ = {
+		226CBD50288C14F500CCD797 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BE43AE288C122F00943F67 /* FlashPopsGameUITests.swift in Sources */,
-				22BE43B0288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift in Sources */,
+				226CBD5B288C14F500CCD797 /* Tests_iOSLaunchTests.swift in Sources */,
+				226CBD59288C14F500CCD797 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226CBD5C288C14F500CCD797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226CBD67288C14F500CCD797 /* Tests_macOSLaunchTests.swift in Sources */,
+				226CBD65288C14F500CCD797 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		22BE43A1288C122F00943F67 /* PBXTargetDependency */ = {
+		226CBD56288C14F500CCD797 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22BE438E288C122D00943F67 /* FlashPopsGame */;
-			targetProxy = 22BE43A0288C122F00943F67 /* PBXContainerItemProxy */;
+			target = 226CBD46288C14F500CCD797 /* FlashPopsGame (iOS) */;
+			targetProxy = 226CBD55288C14F500CCD797 /* PBXContainerItemProxy */;
 		};
-		22BE43AB288C122F00943F67 /* PBXTargetDependency */ = {
+		226CBD62288C14F500CCD797 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22BE438E288C122D00943F67 /* FlashPopsGame */;
-			targetProxy = 22BE43AA288C122F00943F67 /* PBXContainerItemProxy */;
+			target = 226CBD4C288C14F500CCD797 /* FlashPopsGame (macOS) */;
+			targetProxy = 226CBD61288C14F500CCD797 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		226CBD88288C205100CCD797 /* categories.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226CBD89288C205100CCD797 /* en */,
+				226CBD90288C206600CCD797 /* pt-BR */,
+			);
+			name = categories.json;
+			sourceTree = "<group>";
+		};
+		226CBD8C288C205C00CCD797 /* movies.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226CBD8D288C205C00CCD797 /* en */,
+				226CBD91288C207000CCD797 /* pt-BR */,
+			);
+			name = movies.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		22BE43B1288C122F00943F67 /* Debug */ = {
+		226CBD6E288C14F500CCD797 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,17 +523,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		22BE43B2288C122F00943F67 /* Release */ = {
+		226CBD6F288C14F500CCD797 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,115 +575,172 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		226CBD71288C14F500CCD797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
+				PRODUCT_NAME = FlashPopsGame;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		226CBD72288C14F500CCD797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
+				PRODUCT_NAME = FlashPopsGame;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		22BE43B4288C122F00943F67 /* Debug */ = {
+		226CBD74288C14F500CCD797 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FlashPopsGame/Preview Content\"";
 				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FlashPopsGame;
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		22BE43B5288C122F00943F67 /* Release */ = {
+		226CBD75288C14F500CCD797 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FlashPopsGame/Preview Content\"";
 				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FlashPopsGame;
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		22BE43B7288C122F00943F67 /* Debug */ = {
+		226CBD77288C14F500CCD797 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQF7JL5XW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ivan.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashPopsGame.app/FlashPopsGame";
+				TEST_TARGET_NAME = "FlashPopsGame (iOS)";
 			};
 			name = Debug;
 		};
-		22BE43B8288C122F00943F67 /* Release */ = {
+		226CBD78288C14F500CCD797 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQF7JL5XW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ivan.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashPopsGame.app/FlashPopsGame";
+				TEST_TARGET_NAME = "FlashPopsGame (iOS)";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		22BE43BA288C122F00943F67 /* Debug */ = {
+		226CBD7A288C14F500CCD797 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -515,17 +748,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQF7JL5XW3;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ivan.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FlashPopsGame;
+				TEST_TARGET_NAME = "FlashPopsGame (macOS)";
 			};
 			name = Debug;
 		};
-		22BE43BB288C122F00943F67 /* Release */ = {
+		226CBD7B288C14F500CCD797 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -533,56 +767,66 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQF7JL5XW3;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ivan.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FlashPopsGame;
+				TEST_TARGET_NAME = "FlashPopsGame (macOS)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22BE438A288C122D00943F67 /* Build configuration list for PBXProject "FlashPopsGame" */ = {
+		226CBD3E288C14F300CCD797 /* Build configuration list for PBXProject "FlashPopsGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22BE43B1288C122F00943F67 /* Debug */,
-				22BE43B2288C122F00943F67 /* Release */,
+				226CBD6E288C14F500CCD797 /* Debug */,
+				226CBD6F288C14F500CCD797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22BE43B3288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGame" */ = {
+		226CBD70288C14F500CCD797 /* Build configuration list for PBXNativeTarget "FlashPopsGame (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22BE43B4288C122F00943F67 /* Debug */,
-				22BE43B5288C122F00943F67 /* Release */,
+				226CBD71288C14F500CCD797 /* Debug */,
+				226CBD72288C14F500CCD797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22BE43B6288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameTests" */ = {
+		226CBD73288C14F500CCD797 /* Build configuration list for PBXNativeTarget "FlashPopsGame (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22BE43B7288C122F00943F67 /* Debug */,
-				22BE43B8288C122F00943F67 /* Release */,
+				226CBD74288C14F500CCD797 /* Debug */,
+				226CBD75288C14F500CCD797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22BE43B9288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameUITests" */ = {
+		226CBD76288C14F500CCD797 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22BE43BA288C122F00943F67 /* Debug */,
-				22BE43BB288C122F00943F67 /* Release */,
+				226CBD77288C14F500CCD797 /* Debug */,
+				226CBD78288C14F500CCD797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226CBD79288C14F500CCD797 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226CBD7A288C14F500CCD797 /* Debug */,
+				226CBD7B288C14F500CCD797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 22BE4387288C122D00943F67 /* Project object */;
+	rootObject = 226CBD3B288C14F300CCD797 /* Project object */;
 }

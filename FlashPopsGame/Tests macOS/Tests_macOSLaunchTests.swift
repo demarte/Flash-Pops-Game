@@ -1,13 +1,13 @@
 //
-//  FlashPopsGameUITestsLaunchTests.swift
-//  FlashPopsGameUITests
+//  Tests_macOSLaunchTests.swift
+//  Tests macOS
 //
 //  Created by Ivan De Martino on 7/23/22.
 //
 
 import XCTest
 
-class FlashPopsGameUITestsLaunchTests: XCTestCase {
+class Tests_macOSLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
