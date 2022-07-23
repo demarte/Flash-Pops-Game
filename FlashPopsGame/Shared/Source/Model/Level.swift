@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Level: Codable {
-    let number: Int
+struct Level: Codable, Identifiable {
+    let id: Int
     var medias: [Media]
     var isLocked: Bool
 }
@@ -17,9 +17,9 @@ struct Level: Codable {
 
 extension Level {
     
-    static func fixture(number: Int = .zero,
+    static func fixture(id: Int = .zero,
                         medias: [Media] = [Media.fixture()],
                         isLocked: Bool = false) -> Level {
-        return Level(number: number, medias: medias, isLocked: isLocked)
+        return Level(id: id, medias: medias, isLocked: isLocked)
     }
 }

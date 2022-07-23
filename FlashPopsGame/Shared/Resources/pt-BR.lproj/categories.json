@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "name": "Filmes",
+    "levels": [],
+    "score": 0,
+    "isLocked": false,
+  },
+  {
+    "id": 1,
+    "name": "Séries",
+    "levels": [],
+    "score": 0,
+    "isLocked": true,
+  },
+]

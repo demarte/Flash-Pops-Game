@@ -31,9 +31,9 @@ struct Sidebar: View {
     
     private func levelsList(_ levels: [Level],
                             score: Int) -> some View {
-        ForEach(levels, id: \.number) { level in
+        ForEach(levels) { level in
             HStack {
-                Text("Level: \(level.number)")
+                Text("Level: \(level.id)")
                     .font(.body)
                 if score == 10 {
                     Image(systemName: "checkmark.seal.fill")
