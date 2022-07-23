@@ -33,8 +33,8 @@
 		226CBD9B288C218700CCD797 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD99288C218700CCD797 /* Media.swift */; };
 		226CBD9E288C232300CCD797 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD9D288C232300CCD797 /* FileService.swift */; };
 		226CBD9F288C232300CCD797 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD9D288C232300CCD797 /* FileService.swift */; };
-		226CBDA2288C2D8000CCD797 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */; };
-		226CBDA3288C2D8000CCD797 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */; };
+		226CBDA2288C2D8000CCD797 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* DetailScreen.swift */; };
+		226CBDA3288C2D8000CCD797 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* DetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,7 @@
 		226CBD96288C214600CCD797 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		226CBD99288C218700CCD797 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		226CBD9D288C232300CCD797 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
-		226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		226CBDA1288C2D8000CCD797 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +222,7 @@
 		226CBDA0288C2D6200CCD797 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				226CBDA1288C2D8000CCD797 /* WelcomeScreen.swift */,
+				226CBDA1288C2D8000CCD797 /* DetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -393,7 +393,7 @@
 				226CBD97288C214600CCD797 /* Level.swift in Sources */,
 				226CBD94288C20F900CCD797 /* MediaCategory.swift in Sources */,
 				226CBD9A288C218700CCD797 /* Media.swift in Sources */,
-				226CBDA2288C2D8000CCD797 /* WelcomeScreen.swift in Sources */,
+				226CBDA2288C2D8000CCD797 /* DetailScreen.swift in Sources */,
 				226CBD6A288C14F500CCD797 /* ContentView.swift in Sources */,
 				226CBD7E288C180100CCD797 /* Sidebar.swift in Sources */,
 				226CBD9E288C232300CCD797 /* FileService.swift in Sources */,
@@ -409,7 +409,7 @@
 				226CBD98288C214600CCD797 /* Level.swift in Sources */,
 				226CBD95288C20F900CCD797 /* MediaCategory.swift in Sources */,
 				226CBD9B288C218700CCD797 /* Media.swift in Sources */,
-				226CBDA3288C2D8000CCD797 /* WelcomeScreen.swift in Sources */,
+				226CBDA3288C2D8000CCD797 /* DetailScreen.swift in Sources */,
 				226CBD6B288C14F500CCD797 /* ContentView.swift in Sources */,
 				226CBD7F288C180100CCD797 /* Sidebar.swift in Sources */,
 				226CBD9F288C232300CCD797 /* FileService.swift in Sources */,

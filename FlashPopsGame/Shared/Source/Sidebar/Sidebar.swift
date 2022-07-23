@@ -9,10 +9,15 @@ import SwiftUI
 
 struct Sidebar: View {
 
+    // MARK: - Properties
+    
     let categories: [MediaCategory]
+    @Binding var selection: Level.ID?
+    
+    // MARK: - Body
     
     var body: some View {
-        List {
+        List(selection: $selection) {
             ForEach(categories) { category in
                 Section(header: header(category)) {
                     levelsList(category.levels, score: category.score)
@@ -20,6 +25,8 @@ struct Sidebar: View {
             }
         }
     }
+    
+    // MARK: - Private Methods
     
     private func header(_ category: MediaCategory) -> some View {
         HStack {
@@ -52,7 +59,7 @@ struct Sidebar_Previews: PreviewProvider {
                  icon: "film",
                  score: 10,
                  isLocked: false),
-        .fixture(id: 1,
+        .fixture(id: 5,
                  name: "TV Shows",
                  icon: "tv",
                  score: 2,
@@ -60,7 +67,8 @@ struct Sidebar_Previews: PreviewProvider {
     ]
     
     static var previews: some View {
-        Sidebar(categories: categories)
+        Sidebar(categories: categories,
+                selection: .constant(0))
             .preferredColorScheme(.light)
     }
 }

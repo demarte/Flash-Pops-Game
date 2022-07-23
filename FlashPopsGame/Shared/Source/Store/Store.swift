@@ -16,6 +16,7 @@ final class Store: ObservableObject {
     // MARK: - Private Properties
     
     private let fileService: FileServiceProtocol
+    private var levels: [Level] = []
     
     // MARK: - Initializer
     
@@ -29,6 +30,27 @@ final class Store: ObservableObject {
     // MARK: - Private Methods
     
     private func finishInit() {
-        categories = fileService.loadData()
+        let data = fileService.loadData()
+        levels = data.flatMap { $0.levels }
+        categories = data
+    }
+}
+
+// MARK: - Subscript
+
+extension Store {
+    subscript(levelID: Level.ID?) -> Level {
+        get {
+            if let id = levelID {
+                return levels.first(where: { $0.id == id }) ?? .fixture()
+            }
+            return .fixture()
+        }
+        set(newValue) {
+            if let id = levelID,
+               let index = levels.firstIndex(where: { $0.id == id }) {
+                levels[index] = newValue
+            }
+        }
     }
 }
