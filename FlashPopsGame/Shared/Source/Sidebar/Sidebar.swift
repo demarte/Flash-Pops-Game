@@ -51,6 +51,7 @@ struct Sidebar: View {
     }
 }
 
+#if DEBUG
 struct Sidebar_Previews: PreviewProvider {
     
     static let categories: [MediaCategory] = [
@@ -72,3 +73,4 @@ struct Sidebar_Previews: PreviewProvider {
             .preferredColorScheme(.light)
     }
 }
+#endif

@@ -58,7 +58,7 @@ extension Media {
 
 extension URL {
     static var urlMock: URL {
-        let stringURL = "https://audio-ssl.itunes.apple.com/itunes-assets/Music/6d/b0/b6/mzm.grpsgigo.aac.p.m4a"
+        let stringURL = "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/29/6c/73/296c7359-20a2-daa4-b726-8ba2f3b49af3/mzaf_745247285689875746.plus.aac.p.m4a"
         return URL(string: stringURL)!
     }
 }

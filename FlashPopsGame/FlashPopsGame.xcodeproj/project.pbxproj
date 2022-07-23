@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224C6133288CA9DA0070768D /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C6132288CA9DA0070768D /* Networker.swift */; };
+		224C6134288CA9DA0070768D /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C6132288CA9DA0070768D /* Networker.swift */; };
 		226CBD59288C14F500CCD797 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD58288C14F500CCD797 /* Tests_iOS.swift */; };
 		226CBD5B288C14F500CCD797 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD5A288C14F500CCD797 /* Tests_iOSLaunchTests.swift */; };
 		226CBD65288C14F500CCD797 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD64288C14F500CCD797 /* Tests_macOS.swift */; };
@@ -35,6 +37,8 @@
 		226CBD9F288C232300CCD797 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD9D288C232300CCD797 /* FileService.swift */; };
 		226CBDA2288C2D8000CCD797 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* DetailScreen.swift */; };
 		226CBDA3288C2D8000CCD797 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDA1288C2D8000CCD797 /* DetailScreen.swift */; };
+		226CBDB6288C5CE500CCD797 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDB5288C5CE500CCD797 /* AudioPlayerView.swift */; };
+		226CBDB7288C5CE500CCD797 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDB5288C5CE500CCD797 /* AudioPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		224C6132288CA9DA0070768D /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameApp.swift; sourceTree = "<group>"; };
 		226CBD41288C14F300CCD797 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		226CBD42288C14F500CCD797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		226CBD99288C218700CCD797 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		226CBD9D288C232300CCD797 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		226CBDA1288C2D8000CCD797 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		226CBDB5288C5CE500CCD797 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224C6131288CA9BB0070768D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				224C6132288CA9DA0070768D /* Networker.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		226CBD3A288C14F300CCD797 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +204,8 @@
 		226CBD84288C1EBD00CCD797 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				224C6131288CA9BB0070768D /* Utilities */,
+				226CBDA4288C590600CCD797 /* AudioPlayer */,
 				226CBDA0288C2D6200CCD797 /* Screens */,
 				226CBD9C288C222B00CCD797 /* Store */,
 				226CBD92288C20C300CCD797 /* Model */,
@@ -225,6 +241,22 @@
 				226CBDA1288C2D8000CCD797 /* DetailScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		226CBDA4288C590600CCD797 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				226CBDB1288C5C5000CCD797 /* View */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		226CBDB1288C5C5000CCD797 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				226CBDB5288C5CE500CCD797 /* AudioPlayerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224C6133288CA9DA0070768D /* Networker.swift in Sources */,
 				226CBD97288C214600CCD797 /* Level.swift in Sources */,
 				226CBD94288C20F900CCD797 /* MediaCategory.swift in Sources */,
 				226CBD9A288C218700CCD797 /* Media.swift in Sources */,
@@ -397,6 +430,7 @@
 				226CBD6A288C14F500CCD797 /* ContentView.swift in Sources */,
 				226CBD7E288C180100CCD797 /* Sidebar.swift in Sources */,
 				226CBD9E288C232300CCD797 /* FileService.swift in Sources */,
+				226CBDB6288C5CE500CCD797 /* AudioPlayerView.swift in Sources */,
 				226CBD68288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */,
 				226CBD81288C1EA600CCD797 /* Store.swift in Sources */,
 			);
@@ -406,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224C6134288CA9DA0070768D /* Networker.swift in Sources */,
 				226CBD98288C214600CCD797 /* Level.swift in Sources */,
 				226CBD95288C20F900CCD797 /* MediaCategory.swift in Sources */,
 				226CBD9B288C218700CCD797 /* Media.swift in Sources */,
@@ -413,6 +448,7 @@
 				226CBD6B288C14F500CCD797 /* ContentView.swift in Sources */,
 				226CBD7F288C180100CCD797 /* Sidebar.swift in Sources */,
 				226CBD9F288C232300CCD797 /* FileService.swift in Sources */,
+				226CBDB7288C5CE500CCD797 /* AudioPlayerView.swift in Sources */,
 				226CBD69288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */,
 				226CBD82288C1EA600CCD797 /* Store.swift in Sources */,
 			);
@@ -649,6 +685,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -656,15 +693,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
 				PRODUCT_NAME = FlashPopsGame;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -677,6 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -684,15 +724,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
 				PRODUCT_NAME = FlashPopsGame;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
