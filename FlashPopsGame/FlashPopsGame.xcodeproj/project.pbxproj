@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22BE4393288C122D00943F67 /* FlashPopsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE4392288C122D00943F67 /* FlashPopsGameApp.swift */; };
+		22BE4395288C122D00943F67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE4394288C122D00943F67 /* ContentView.swift */; };
+		22BE4397288C122E00943F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BE4396288C122E00943F67 /* Assets.xcassets */; };
+		22BE439A288C122E00943F67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BE4399288C122E00943F67 /* Preview Assets.xcassets */; };
+		22BE43A4288C122F00943F67 /* FlashPopsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE43A3288C122F00943F67 /* FlashPopsGameTests.swift */; };
+		22BE43AE288C122F00943F67 /* FlashPopsGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE43AD288C122F00943F67 /* FlashPopsGameUITests.swift */; };
+		22BE43B0288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE43AF288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22BE43A0288C122F00943F67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22BE4387288C122D00943F67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22BE438E288C122D00943F67;
+			remoteInfo = FlashPopsGame;
+		};
+		22BE43AA288C122F00943F67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22BE4387288C122D00943F67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22BE438E288C122D00943F67;
+			remoteInfo = FlashPopsGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22BE438F288C122D00943F67 /* FlashPopsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashPopsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BE4392288C122D00943F67 /* FlashPopsGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameApp.swift; sourceTree = "<group>"; };
+		22BE4394288C122D00943F67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22BE4396288C122E00943F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22BE4399288C122E00943F67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22BE439F288C122F00943F67 /* FlashPopsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashPopsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BE43A3288C122F00943F67 /* FlashPopsGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameTests.swift; sourceTree = "<group>"; };
+		22BE43A9288C122F00943F67 /* FlashPopsGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashPopsGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BE43AD288C122F00943F67 /* FlashPopsGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameUITests.swift; sourceTree = "<group>"; };
+		22BE43AF288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22BE438C288C122D00943F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BE439C288C122F00943F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BE43A6288C122F00943F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22BE4386288C122D00943F67 = {
+			isa = PBXGroup;
+			children = (
+				22BE4391288C122D00943F67 /* FlashPopsGame */,
+				22BE43A2288C122F00943F67 /* FlashPopsGameTests */,
+				22BE43AC288C122F00943F67 /* FlashPopsGameUITests */,
+				22BE4390288C122D00943F67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22BE4390288C122D00943F67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22BE438F288C122D00943F67 /* FlashPopsGame.app */,
+				22BE439F288C122F00943F67 /* FlashPopsGameTests.xctest */,
+				22BE43A9288C122F00943F67 /* FlashPopsGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22BE4391288C122D00943F67 /* FlashPopsGame */ = {
+			isa = PBXGroup;
+			children = (
+				22BE4392288C122D00943F67 /* FlashPopsGameApp.swift */,
+				22BE4394288C122D00943F67 /* ContentView.swift */,
+				22BE4396288C122E00943F67 /* Assets.xcassets */,
+				22BE4398288C122E00943F67 /* Preview Content */,
+			);
+			path = FlashPopsGame;
+			sourceTree = "<group>";
+		};
+		22BE4398288C122E00943F67 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22BE4399288C122E00943F67 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22BE43A2288C122F00943F67 /* FlashPopsGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				22BE43A3288C122F00943F67 /* FlashPopsGameTests.swift */,
+			);
+			path = FlashPopsGameTests;
+			sourceTree = "<group>";
+		};
+		22BE43AC288C122F00943F67 /* FlashPopsGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22BE43AD288C122F00943F67 /* FlashPopsGameUITests.swift */,
+				22BE43AF288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift */,
+			);
+			path = FlashPopsGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22BE438E288C122D00943F67 /* FlashPopsGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BE43B3288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGame" */;
+			buildPhases = (
+				22BE438B288C122D00943F67 /* Sources */,
+				22BE438C288C122D00943F67 /* Frameworks */,
+				22BE438D288C122D00943F67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashPopsGame;
+			productName = FlashPopsGame;
+			productReference = 22BE438F288C122D00943F67 /* FlashPopsGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22BE439E288C122F00943F67 /* FlashPopsGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BE43B6288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameTests" */;
+			buildPhases = (
+				22BE439B288C122F00943F67 /* Sources */,
+				22BE439C288C122F00943F67 /* Frameworks */,
+				22BE439D288C122F00943F67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22BE43A1288C122F00943F67 /* PBXTargetDependency */,
+			);
+			name = FlashPopsGameTests;
+			productName = FlashPopsGameTests;
+			productReference = 22BE439F288C122F00943F67 /* FlashPopsGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22BE43A8288C122F00943F67 /* FlashPopsGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BE43B9288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameUITests" */;
+			buildPhases = (
+				22BE43A5288C122F00943F67 /* Sources */,
+				22BE43A6288C122F00943F67 /* Frameworks */,
+				22BE43A7288C122F00943F67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22BE43AB288C122F00943F67 /* PBXTargetDependency */,
+			);
+			name = FlashPopsGameUITests;
+			productName = FlashPopsGameUITests;
+			productReference = 22BE43A9288C122F00943F67 /* FlashPopsGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22BE4387288C122D00943F67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					22BE438E288C122D00943F67 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					22BE439E288C122F00943F67 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 22BE438E288C122D00943F67;
+					};
+					22BE43A8288C122F00943F67 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 22BE438E288C122D00943F67;
+					};
+				};
+			};
+			buildConfigurationList = 22BE438A288C122D00943F67 /* Build configuration list for PBXProject "FlashPopsGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22BE4386288C122D00943F67;
+			productRefGroup = 22BE4390288C122D00943F67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22BE438E288C122D00943F67 /* FlashPopsGame */,
+				22BE439E288C122F00943F67 /* FlashPopsGameTests */,
+				22BE43A8288C122F00943F67 /* FlashPopsGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22BE438D288C122D00943F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BE439A288C122E00943F67 /* Preview Assets.xcassets in Resources */,
+				22BE4397288C122E00943F67 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BE439D288C122F00943F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BE43A7288C122F00943F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22BE438B288C122D00943F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BE4395288C122D00943F67 /* ContentView.swift in Sources */,
+				22BE4393288C122D00943F67 /* FlashPopsGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BE439B288C122F00943F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BE43A4288C122F00943F67 /* FlashPopsGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BE43A5288C122F00943F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BE43AE288C122F00943F67 /* FlashPopsGameUITests.swift in Sources */,
+				22BE43B0288C122F00943F67 /* FlashPopsGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22BE43A1288C122F00943F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22BE438E288C122D00943F67 /* FlashPopsGame */;
+			targetProxy = 22BE43A0288C122F00943F67 /* PBXContainerItemProxy */;
+		};
+		22BE43AB288C122F00943F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22BE438E288C122D00943F67 /* FlashPopsGame */;
+			targetProxy = 22BE43AA288C122F00943F67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22BE43B1288C122F00943F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22BE43B2288C122F00943F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22BE43B4288C122F00943F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlashPopsGame/Preview Content\"";
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22BE43B5288C122F00943F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlashPopsGame/Preview Content\"";
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22BE43B7288C122F00943F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashPopsGame.app/FlashPopsGame";
+			};
+			name = Debug;
+		};
+		22BE43B8288C122F00943F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashPopsGame.app/FlashPopsGame";
+			};
+			name = Release;
+		};
+		22BE43BA288C122F00943F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlashPopsGame;
+			};
+			name = Debug;
+		};
+		22BE43BB288C122F00943F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQF7JL5XW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ivan.FlashPopsGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlashPopsGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22BE438A288C122D00943F67 /* Build configuration list for PBXProject "FlashPopsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BE43B1288C122F00943F67 /* Debug */,
+				22BE43B2288C122F00943F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BE43B3288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BE43B4288C122F00943F67 /* Debug */,
+				22BE43B5288C122F00943F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BE43B6288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BE43B7288C122F00943F67 /* Debug */,
+				22BE43B8288C122F00943F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BE43B9288C122F00943F67 /* Build configuration list for PBXNativeTarget "FlashPopsGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BE43BA288C122F00943F67 /* Debug */,
+				22BE43BB288C122F00943F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22BE4387288C122D00943F67 /* Project object */;
+}
