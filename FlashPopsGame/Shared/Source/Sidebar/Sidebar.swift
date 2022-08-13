@@ -24,6 +24,7 @@ struct Sidebar: View {
                 }
             }
         }
+        .listStyle(.sidebar)
     }
     
     // MARK: - Private Methods
@@ -53,24 +54,11 @@ struct Sidebar: View {
 
 #if DEBUG
 struct Sidebar_Previews: PreviewProvider {
-    
-    static let categories: [MediaCategory] = [
-        .fixture(id: 0,
-                 name: "Movies",
-                 icon: "film",
-                 score: 10,
-                 isLocked: false),
-        .fixture(id: 5,
-                 name: "TV Shows",
-                 icon: "tv",
-                 score: 2,
-                 isLocked: false)
-    ]
-    
     static var previews: some View {
-        Sidebar(categories: categories,
+        Sidebar(categories: MediaCategory.sample,
                 selection: .constant(0))
             .preferredColorScheme(.light)
+            .frame(width: 200)
     }
 }
 #endif

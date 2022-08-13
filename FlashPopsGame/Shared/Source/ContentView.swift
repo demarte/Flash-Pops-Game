@@ -18,6 +18,12 @@ struct ContentView: View {
                     selection: selection)
             DetailScreen(selectedLevel: selectedLevel)
         }
+        .frame(minWidth: 700,
+               idealWidth: 1000,
+               maxWidth: .infinity,
+               minHeight: 400,
+               idealHeight: 800,
+               maxHeight: .infinity)
     }
     
     private var selection: Binding<Level.ID?> {

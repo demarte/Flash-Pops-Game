@@ -45,3 +45,22 @@ extension MediaCategory {
                              isLocked: isLocked)
     }
 }
+
+// MARK: - Sample
+
+extension MediaCategory {
+    static var sample: [MediaCategory] {
+        [
+            .fixture(id: 0,
+                     name: "Movies",
+                     icon: "film",
+                     score: 10,
+                     isLocked: false),
+            .fixture(id: 5,
+                     name: "TV Shows",
+                     icon: "tv",
+                     score: 2,
+                     isLocked: false)
+        ]
+    }
+}

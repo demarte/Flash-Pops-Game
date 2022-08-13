@@ -11,6 +11,10 @@ struct Level: Codable, Identifiable {
     let id: Int
     var medias: [Media]
     var isLocked: Bool
+    
+    mutating func changeMedia(_ name: String) {
+        
+    }
 }
 
 // MARK: - Fixture
@@ -21,5 +25,17 @@ extension Level {
                         medias: [Media] = [Media.fixture()],
                         isLocked: Bool = false) -> Level {
         return Level(id: id, medias: medias, isLocked: isLocked)
+    }
+}
+
+// MARK: - Sample
+
+extension Level {
+    static var sample: Level {
+        let medias: [Media] = [.fixture(id: UUID()),
+                               .fixture(id: UUID()),
+                               .fixture(id: UUID())
+        ]
+        return .fixture(medias: medias)
     }
 }

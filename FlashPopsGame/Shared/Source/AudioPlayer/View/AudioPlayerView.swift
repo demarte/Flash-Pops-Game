@@ -21,8 +21,7 @@ struct AudioPlayerView: View {
     // MARK: - Body
     
     var body: some View {
-        VStack {
-        }
+        EmptyView()
         .onChange(of: media) { newValue in
             if let value = newValue {
                 audioPlayer?.stop()

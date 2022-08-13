@@ -11,7 +11,7 @@ final class Store: ObservableObject {
     
     // MARK: - Public Properties
     
-    @Published public var categories: [MediaCategory] = []
+    @Published var categories: [MediaCategory] = []
     
     // MARK: - Private Properties
     
@@ -22,7 +22,7 @@ final class Store: ObservableObject {
     
     /// Instantiates an `Store` class
     /// - Parameter fileService: A type that conforms to `FileServiceProtocol`
-    public init(fileService: FileServiceProtocol = FileService()) {
+    init(fileService: FileServiceProtocol = FileService()) {
         self.fileService = fileService
         finishInit()
     }

@@ -12,6 +12,10 @@ enum FetchError: Error {
 }
 
 enum Networker {
+    
+    /// Fetch music from Itunes API
+    /// - Parameter songURL: A simple `URL` url.
+    /// - Returns: A `Data` instance in bytes.
     static func fetchMusic(with songURL: URL) async throws -> Data {        
         let request = URLRequest(url: songURL)
         let (data, _) = try await URLSession.shared.data(for: request)
