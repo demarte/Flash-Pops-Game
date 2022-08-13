@@ -39,6 +39,7 @@ final class Store: ObservableObject {
         for index in categories.indices {
             if let levelIndex = categories[index].levels.firstIndex(where: { $0.id == level.id }) {
                 categories[index].levels[levelIndex] = level
+                categories[index].score += 1
                 fileService.saveGame(with: categories)
                 break
             }

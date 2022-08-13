@@ -11,6 +11,11 @@ struct Level: Codable, Identifiable {
     let id: Int
     var medias: [Media]
     var isLocked: Bool
+    
+    var progress: String {
+        let unlockedMedias = medias.filter { $0.status == .success }
+        return "\(unlockedMedias.count)/\(medias.count)"
+    }
 }
 
 // MARK: - Fixture

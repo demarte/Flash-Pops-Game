@@ -26,10 +26,13 @@ struct DetailScreen: View {
     
     var body: some View {
         VStack {
-            TextField("Guess the title", text: $inputText)
-                .textFieldStyle(.roundedBorder)
-                .frame(width: 300, height: 30)
+            HStack {
+                Label(selectedLevel.progress, systemImage: "folder.circle")
+                TextField("Guess the title", text: $inputText)
+                    .textFieldStyle(.roundedBorder)
+                    .frame(width: 300, height: 30)
                 .onChange(of: inputText, perform: onChange)
+            }
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(selectedLevel.medias) { media in

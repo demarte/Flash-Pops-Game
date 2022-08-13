@@ -17,6 +17,7 @@ struct CardView: View {
     
     var media: Media
     let isSelected: Bool
+    @State private var onHover: Bool = false
     
     // MARK: - Body
     
@@ -27,7 +28,7 @@ struct CardView: View {
             } else {
                 cardBackgroundView
             }
-            cardBorder
+            CardOnHoverView(onHover: $onHover)
         }
         .frame(width: 180)
         .aspectRatio(3/4, contentMode: .fit)
@@ -61,27 +62,15 @@ struct CardView: View {
     }
     
     private var cardBackgroundView: some View {
-        Color.accentColor
-    }
-    
-    private var cardBorder: some View {
         ZStack {
-            if isSelected {
-                RoundedRectangle(cornerRadius: 8)
-                    .strokeBorder(lineWidth: 4)
-                    .foregroundColor(.black)
-            }
+            Color.accentColor
         }
     }
     
     // MARK: - Private Methods
     
     private func hanldeHover(_ inside: Bool) {
-        if inside {
-            NSCursor.pointingHand.push()
-        } else {
-            NSCursor.pop()
-        }
+        onHover = inside
     }
 }
 
@@ -90,6 +79,7 @@ struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView(media: Media.sample,
                  isSelected: true)
+            .frame(width: 180, height: 240)
             .preferredColorScheme(.light)
     }
 }
