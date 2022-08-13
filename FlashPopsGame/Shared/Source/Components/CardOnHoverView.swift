@@ -14,8 +14,10 @@ struct CardOnHoverView: View {
     var body: some View {
         ZStack {
             Color.black.opacity(onHover ? 0.3 : 0)
-            PlayButtonView(onHover: $onHover)
-                .frame(width: 60, height: 60)
+            if onHover {
+                PlayButtonView()
+                    .frame(width: 60, height: 60)
+            }
         }
     }
 }

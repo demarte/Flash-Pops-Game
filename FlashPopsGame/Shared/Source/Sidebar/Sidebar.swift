@@ -14,39 +14,59 @@ struct Sidebar: View {
     let categories: [MediaCategory]
     @Binding var selection: Level.ID?
     
+    private var score: Int {
+        categories.reduce(0, { total, category in
+            category.score + total
+        })
+    }
+    
     // MARK: - Body
     
     var body: some View {
-        List(selection: $selection) {
-            ForEach(categories) { category in
-                Section(header: header(category)) {
-                    levelsList(category.levels, score: category.score)
+        VStack {
+            scoreView
+            List(selection: $selection) {
+                ForEach(categories) { category in
+                    Section(header: header(category)) {
+                        levelsList(category.levels, score: category.score)
+                    }
                 }
             }
+            .listStyle(.sidebar)
         }
-        .listStyle(.sidebar)
     }
     
     // MARK: - Private Methods
     
-    private func header(_ category: MediaCategory) -> some View {
-        HStack {
-            Image(systemName: category.icon)
-            Text(category.name)
+    private var scoreView: some View {
+        ZStack(alignment: .leading) {
+            Color.black.opacity(0.15)
+            Text("score: \(score)")
+                .padding(.leading)
         }
+        .frame(height: 28)
+        .cornerRadius(4)
+        .padding()
+    }
+    
+    private func header(_ category: MediaCategory) -> some View {
+        Label(category.name, systemImage: category.icon)
     }
     
     private func levelsList(_ levels: [Level],
                             score: Int) -> some View {
         ForEach(levels) { level in
             HStack {
-                Text("Level: \(level.id)")
+                Label("Level: \(level.id)",
+                      systemImage: level.isLocked ? "lock" : "lock.open")
                     .font(.body)
+                    .padding(.leading)
                 if score == 10 {
                     Image(systemName: "checkmark.seal.fill")
                         .foregroundColor(.green)
                 }
             }
+//            .disabled(true)
         }
     }
 }

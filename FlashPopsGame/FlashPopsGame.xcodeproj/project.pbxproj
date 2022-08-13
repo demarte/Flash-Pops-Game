@@ -132,18 +132,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2226A4C928A7E394005876C8 /* UserDefaults */ = {
+		2226A4C928A7E394005876C8 /* FileService */ = {
 			isa = PBXGroup;
 			children = (
+				226CBD9D288C232300CCD797 /* FileService.swift */,
 				2226A4CA28A7E44D005876C8 /* UserDefaultsKey.swift */,
 			);
-			path = UserDefaults;
+			path = FileService;
 			sourceTree = "<group>";
 		};
 		224C6131288CA9BB0070768D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2226A4C928A7E394005876C8 /* UserDefaults */,
+				2226A4C928A7E394005876C8 /* FileService */,
 				22CA9218289EE0700020ABFE /* Network */,
 				22CA9217289EE0630020ABFE /* Cache */,
 			);
@@ -254,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				226CBD80288C1EA600CCD797 /* Store.swift */,
-				226CBD9D288C232300CCD797 /* FileService.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";

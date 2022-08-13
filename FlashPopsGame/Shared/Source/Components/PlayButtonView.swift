@@ -9,16 +9,14 @@ import SwiftUI
 
 struct PlayButtonView: View {
     
-    @Binding var onHover: Bool
-    
     var body: some View {
         ZStack {
             Circle()
-                .fill(Color.black.opacity(onHover ? 0.5 : 0.1))
+                .fill(Color.black.opacity(0.5))
                 .padding(5)
             Image(systemName: "play.fill")
                 .font(.system(size: 24))
-                .foregroundColor(.white.opacity(onHover ? 1 : 0.5))
+                .foregroundColor(.white)
                 .padding()
         }
     }
@@ -26,7 +24,7 @@ struct PlayButtonView: View {
 
 struct PlayButton_Previews: PreviewProvider {
     static var previews: some View {
-        PlayButtonView(onHover: .constant(false))
+        PlayButtonView()
             .frame(width: 60, height: 60)
     }
 }
