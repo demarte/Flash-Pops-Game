@@ -11,10 +11,6 @@ struct Level: Codable, Identifiable {
     let id: Int
     var medias: [Media]
     var isLocked: Bool
-    
-    mutating func changeMedia(_ name: String) {
-        
-    }
 }
 
 // MARK: - Fixture

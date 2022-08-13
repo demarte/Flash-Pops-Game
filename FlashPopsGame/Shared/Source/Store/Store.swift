@@ -34,6 +34,16 @@ final class Store: ObservableObject {
         levels = data.flatMap { $0.levels }
         categories = data
     }
+    
+    private func updateCategories(with level: Level) {
+        for index in categories.indices {
+            if let levelIndex = categories[index].levels.firstIndex(where: { $0.id == level.id }) {
+                categories[index].levels[levelIndex] = level
+                fileService.saveGame(with: categories)
+                break
+            }
+        }
+    }
 }
 
 // MARK: - Subscript
@@ -50,6 +60,7 @@ extension Store {
             if let id = levelID,
                let index = levels.firstIndex(where: { $0.id == id }) {
                 levels[index] = newValue
+                updateCategories(with: newValue)
             }
         }
     }

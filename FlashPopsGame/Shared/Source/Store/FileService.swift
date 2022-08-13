@@ -9,6 +9,7 @@ import Foundation
 
 protocol FileServiceProtocol {
     func loadData() -> [MediaCategory]
+    func saveGame(with mediaCategories: [MediaCategory])
 }
 
 struct FileService: FileServiceProtocol {
@@ -16,20 +17,30 @@ struct FileService: FileServiceProtocol {
     // MARK: - Private Properties
     
     private let decoder = JSONDecoder()
-    private var filename = "database.json"
-    
-    private var applicationSupportDirectory: URL {
-        FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-    }
-    
-    private var databaseFileUrl: URL {
-        applicationSupportDirectory.appendingPathComponent(filename)
-    }
+    private let encoder = JSONEncoder()
+    private let filename = "movies"
     
     // MARK: - Public Methods
     
     func loadData() -> [MediaCategory] {
-        guard let file = Bundle.main.url(forResource: "movies", withExtension: "json"),
+        guard let data = UserDefaults.standard.object(forKey: UserDefaultsKey.flashPopsGameData.rawValue) as? Data,
+           let medias = try? decoder.decode([MediaCategory].self, from: data) else {
+          return loadFromJSON()
+        }
+        
+        return medias
+    }
+    
+    func saveGame(with mediaCategories: [MediaCategory]) {
+        guard let data = try? encoder.encode(mediaCategories) else { return }
+        
+        UserDefaults.standard.set(data, forKey: UserDefaultsKey.flashPopsGameData.rawValue)
+    }
+    
+    // MARK: - Private Methods
+    
+    private func loadFromJSON() -> [MediaCategory] {
+        guard let file = Bundle.main.url(forResource: filename, withExtension: "json"),
               let data = try? Data(contentsOf: file),
               let medias = try? decoder.decode([MediaCategory].self, from: data) else {
             
