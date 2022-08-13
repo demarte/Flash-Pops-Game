@@ -32,7 +32,6 @@ struct Sidebar: View {
     private func header(_ category: MediaCategory) -> some View {
         HStack {
             Image(systemName: category.icon)
-                .foregroundColor(.pink)
             Text(category.name)
         }
     }
