@@ -11,6 +11,7 @@
 		22160FB828A81AA40045F408 /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22160FB628A81AA40045F408 /* PlayButtonView.swift */; };
 		22160FBA28A829C00045F408 /* CardOnHoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22160FB928A829C00045F408 /* CardOnHoverView.swift */; };
 		22160FBB28A829C00045F408 /* CardOnHoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22160FB928A829C00045F408 /* CardOnHoverView.swift */; };
+		2219D61A28B108770084A608 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 2219D61928B108770084A608 /* Credits.html */; };
 		2226A4CB28A7E44D005876C8 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226A4CA28A7E44D005876C8 /* UserDefaultsKey.swift */; };
 		2226A4CC28A7E44D005876C8 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226A4CA28A7E44D005876C8 /* UserDefaultsKey.swift */; };
 		224C6133288CA9DA0070768D /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C6132288CA9DA0070768D /* Networker.swift */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		22160FB628A81AA40045F408 /* PlayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonView.swift; sourceTree = "<group>"; };
 		22160FB928A829C00045F408 /* CardOnHoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOnHoverView.swift; sourceTree = "<group>"; };
+		2219D61928B108770084A608 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		2226A4CA28A7E44D005876C8 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		224C6132288CA9DA0070768D /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPopsGameApp.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			children = (
 				226CBD8C288C205C00CCD797 /* movies.json */,
 				226CBD42288C14F500CCD797 /* Assets.xcassets */,
+				2219D61928B108770084A608 /* Credits.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				226CBD8F288C205C00CCD797 /* movies.json in Resources */,
+				2219D61A28B108770084A608 /* Credits.html in Resources */,
 				226CBD6D288C14F500CCD797 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
