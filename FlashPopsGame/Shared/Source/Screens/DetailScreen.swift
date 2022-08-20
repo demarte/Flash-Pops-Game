@@ -46,12 +46,12 @@ struct DetailScreen: View {
     // MARK: - Private Properties
     
     private var levelProgress: some View {
-        VStack {
+        ZStack {
+            RoundedRectangle(cornerRadius: 8)
+                .foregroundColor(.accentColor)
             Label(selectedLevel.progress, systemImage: "checkmark.circle")
-            .frame(width: 58, height: 28)
         }
-        .cornerRadius(4)
-        .background(Color.accentColor)
+        .frame(width: 58, height: 24)
         .padding()
     }
     
