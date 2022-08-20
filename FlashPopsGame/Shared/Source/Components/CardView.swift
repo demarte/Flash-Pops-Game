@@ -17,24 +17,31 @@ struct CardView: View {
     
     var media: Media
     let isSelected: Bool
+    let onChange: ((Media) -> Void)?
     @State private var onHover: Bool = false
+    @State private var inputText: String = .init()
     
     // MARK: - Body
     
     var body: some View {
-        ZStack {
-            if media.status == .notAnswerd {
-                posterView
-            } else {
-                cardBackgroundView
+        VStack {
+            ZStack {
+                if media.status == .success {
+                    posterView
+                } else {
+                    cardBackgroundView
+                }
+                CardOnHoverView(onHover: $onHover)
             }
-            CardOnHoverView(onHover: $onHover)
+            .frame(width: 144)
+            .aspectRatio(3/4, contentMode: .fit)
+            .cornerRadius(8)
+            .onHover(perform: hanldeHover)
+            TextField("Guess the title", text: $inputText)
+                .textFieldStyle(.roundedBorder)
+                .frame(height: 30)
+                .onChange(of: inputText, perform: onChange)
         }
-        .frame(width: 180)
-        .aspectRatio(3/4, contentMode: .fit)
-        .cornerRadius(8)
-        .onHover(perform: hanldeHover)
-        .padding()
     }
     
     // MARK: - Private Properties
@@ -50,7 +57,8 @@ struct CardView: View {
             case .success(let image):
                 image
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
+//                    .scaledToFill()
             case .failure:
                 CardErrorView()
             case .empty:
@@ -72,13 +80,21 @@ struct CardView: View {
     private func hanldeHover(_ inside: Bool) {
         onHover = inside
     }
+    
+    private func onChange(_ text: String) {
+        guard media.status == .notAnswerd,
+              text.lowercased() == media.title.lowercased() else { return }
+            
+        onChange?(media)
+    }
 }
 
 #if DEBUG
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView(media: Media.sample,
-                 isSelected: true)
+                 isSelected: true,
+                 onChange: nil)
             .frame(width: 180, height: 240)
             .preferredColorScheme(.light)
     }

@@ -16,32 +16,26 @@ struct DetailScreen: View {
     // MARK: Private Properties
     
     @State private var selectedMedia: Media?
-    @State private var inputText: String = .init()
     
     private var columns: [GridItem] {
-        [.init(.adaptive(minimum: 200, maximum: 200))]
+        [.init(.adaptive(minimum: 160, maximum: 160))]
     }
     
     // MARK: - Body
     
     var body: some View {
         VStack {
-            HStack {
-                Label(selectedLevel.progress, systemImage: "folder.circle")
-                TextField("Guess the title", text: $inputText)
-                    .textFieldStyle(.roundedBorder)
-                    .frame(width: 300, height: 30)
-                .onChange(of: inputText, perform: onChange)
-            }
+            levelProgress
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(selectedLevel.medias) { media in
                         CardView(media: media,
-                                 isSelected: selectedMedia == media)
+                                 isSelected: selectedMedia == media,
+                                 onChange: onChange)
                             .onTapGesture {
                                 selectedMedia = media
                             }
-                            .frame(width: 180)
+                            .frame(width: 160)
                     }
                 }
             }
@@ -49,14 +43,24 @@ struct DetailScreen: View {
         AudioPlayerView(media: $selectedMedia)
     }
     
-    // MARK: - Private Methods
+    // MARK: - Private Properties
     
-    private func onChange(_ text: String) {
-        if let index = selectedLevel.medias.firstIndex(where: { $0.id == selectedMedia?.id }),
-           text.lowercased() == selectedMedia?.title.lowercased() {
-            selectedLevel.medias[index].status = .success
-            selectedMedia = nil
+    private var levelProgress: some View {
+        VStack {
+            Label(selectedLevel.progress, systemImage: "checkmark.circle")
+            .frame(width: 58, height: 28)
         }
+        .cornerRadius(4)
+        .background(Color.accentColor)
+        .padding()
+    }
+    
+    // MARK: - Private Properties
+    
+    private func onChange(_ media: Media) {
+        guard let index = selectedLevel.medias.firstIndex(where: { $0.id == media.id }) else { return }
+        
+        selectedLevel.medias[index].status = .success
     }
 }
 
