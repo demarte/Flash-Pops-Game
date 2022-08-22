@@ -16,7 +16,6 @@ struct CardView: View {
     }
     
     var media: Media
-    let isSelected: Bool
     let onChange: ((Media) -> Void)?
     @State private var onHover: Bool = false
     @State private var inputText: String = .init()
@@ -58,7 +57,6 @@ struct CardView: View {
                 image
                     .resizable()
                     .scaledToFit()
-//                    .scaledToFill()
             case .failure:
                 CardErrorView()
             case .empty:
@@ -72,6 +70,9 @@ struct CardView: View {
     private var cardBackgroundView: some View {
         ZStack {
             Color.cardColor
+            Image("CardBackground")
+                .resizable()
+                .scaledToFit()
         }
     }
     
@@ -93,7 +94,6 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView(media: Media.sample,
-                 isSelected: true,
                  onChange: nil)
             .frame(width: 180, height: 240)
             .preferredColorScheme(.light)
