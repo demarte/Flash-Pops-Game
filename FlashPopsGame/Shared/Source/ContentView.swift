@@ -30,7 +30,7 @@ struct ContentView: View {
         Binding(get: { selectedLevelID }, set: { selectedLevelID = $0 })
     }
     
-    private var selectedLevel: Binding<Level> {
+    private var selectedLevel: Binding<Level?> {
         $store[selection.wrappedValue]
     }
 }

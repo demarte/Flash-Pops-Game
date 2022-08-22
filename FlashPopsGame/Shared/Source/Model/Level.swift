@@ -12,9 +12,12 @@ struct Level: Codable, Identifiable {
     var medias: [Media]
     var isLocked: Bool
     
+    var scoreCount: Int {
+        medias.filter { $0.status == .success }.count
+    }
+    
     var progress: String {
-        let unlockedMedias = medias.filter { $0.status == .success }
-        return "\(unlockedMedias.count)/\(medias.count)"
+        "\(scoreCount)/\(medias.count)"
     }
 }
 

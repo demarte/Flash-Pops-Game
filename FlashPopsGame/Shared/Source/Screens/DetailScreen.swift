@@ -11,7 +11,7 @@ struct DetailScreen: View {
     
     // MARK: Public Properties
     
-    @Binding var selectedLevel: Level
+    @Binding var selectedLevel: Level?
     
     // MARK: Private Properties
     
@@ -28,9 +28,8 @@ struct DetailScreen: View {
             levelProgress
             ScrollView {
                 LazyVGrid(columns: columns) {
-                    ForEach(selectedLevel.medias) { media in
+                    ForEach(selectedLevel?.medias ?? []) { media in
                         CardView(media: media,
-                                 isSelected: selectedMedia == media,
                                  onChange: onChange)
                             .onTapGesture {
                                 selectedMedia = media
@@ -49,7 +48,8 @@ struct DetailScreen: View {
         ZStack {
             RoundedRectangle(cornerRadius: 8)
                 .foregroundColor(.accentColor)
-            Label(selectedLevel.progress, systemImage: "checkmark.circle")
+            Label(selectedLevel?.progress ?? .init(),
+                  systemImage: "checkmark.circle")
         }
         .frame(width: 58, height: 24)
         .padding()
@@ -58,9 +58,9 @@ struct DetailScreen: View {
     // MARK: - Private Properties
     
     private func onChange(_ media: Media) {
-        guard let index = selectedLevel.medias.firstIndex(where: { $0.id == media.id }) else { return }
+        guard let index = selectedLevel?.medias.firstIndex(where: { $0.id == media.id }) else { return }
         
-        selectedLevel.medias[index].status = .success
+        selectedLevel?.medias[index].status = .success
     }
 }
 

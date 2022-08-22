@@ -28,7 +28,7 @@ struct Sidebar: View {
             List(selection: $selection) {
                 ForEach(categories) { category in
                     Section(header: header(category)) {
-                        levelsList(category.levels, score: category.score)
+                        levelsList(category.levels)
                     }
                 }
             }
@@ -53,15 +53,14 @@ struct Sidebar: View {
         Label(category.name, systemImage: category.icon)
     }
     
-    private func levelsList(_ levels: [Level],
-                            score: Int) -> some View {
+    private func levelsList(_ levels: [Level]) -> some View {
         ForEach(levels) { level in
             HStack {
                 Label("Level: \(level.id)",
                       systemImage: level.isLocked ? "lock" : "lock.open")
                     .font(.body)
                     .padding(.leading)
-                if score == 10 {
+                if level.scoreCount == level.medias.count {
                     Image(systemName: "checkmark.seal.fill")
                         .foregroundColor(.green)
                 }

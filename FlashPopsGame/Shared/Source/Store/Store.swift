@@ -50,18 +50,16 @@ final class Store: ObservableObject {
 // MARK: - Subscript
 
 extension Store {
-    subscript(levelID: Level.ID?) -> Level {
+    subscript(levelID: Level.ID?) -> Level? {
         get {
-            if let id = levelID {
-                return levels.first(where: { $0.id == id }) ?? .fixture()
-            }
-            return .fixture()
+            return levels.first(where: { $0.id == levelID })
         }
         set(newValue) {
             if let id = levelID,
-               let index = levels.firstIndex(where: { $0.id == id }) {
-                levels[index] = newValue
-                updateCategories(with: newValue)
+               let index = levels.firstIndex(where: { $0.id == id }),
+               let level = newValue {
+                levels[index] = level
+                updateCategories(with: level)
             }
         }
     }
