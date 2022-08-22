@@ -41,7 +41,7 @@ struct Sidebar: View {
     private var scoreView: some View {
         ZStack(alignment: .leading) {
             Color.black.opacity(0.15)
-            Text("score: \(score)")
+            Text("\(Localizable.scoreText.localized) \(score)")
                 .padding(.leading)
         }
         .frame(height: 28)
@@ -56,7 +56,7 @@ struct Sidebar: View {
     private func levelsList(_ levels: [Level]) -> some View {
         ForEach(levels) { level in
             HStack {
-                Label("Level: \(level.id)",
+                Label("\(Localizable.levelText.localized) \(level.id)",
                       systemImage: level.isLocked ? "lock" : "lock.open")
                     .font(.body)
                     .padding(.leading)

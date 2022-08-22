@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  FlashPopsGame
+
+  Created by Ivan De Martino on 8/22/22.
+  
+*/
+
+"scoreText" = "Score:";
+"levelText" = "Level:";
+"guessTheTitle" = "Guess the title";

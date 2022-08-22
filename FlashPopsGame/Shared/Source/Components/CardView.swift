@@ -36,7 +36,8 @@ struct CardView: View {
             .aspectRatio(3/4, contentMode: .fit)
             .cornerRadius(8)
             .onHover(perform: hanldeHover)
-            TextField("Guess the title", text: $inputText)
+            TextField(Localizable.guessTheTitle.localized,
+                      text: $inputText)
                 .textFieldStyle(.roundedBorder)
                 .frame(height: 30)
                 .onChange(of: inputText, perform: onChange)
