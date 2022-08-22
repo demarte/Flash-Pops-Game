@@ -12,6 +12,7 @@ struct DetailScreen: View {
     // MARK: Public Properties
     
     @Binding var selectedLevel: Level?
+    @EnvironmentObject var store: Store
     
     // MARK: Private Properties
     
@@ -45,14 +46,17 @@ struct DetailScreen: View {
     // MARK: - Private Properties
     
     private var levelProgress: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 8)
-                .foregroundColor(.accentColor)
-            Label(selectedLevel?.progress ?? .init(),
-                  systemImage: "checkmark.circle")
+        HStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 8)
+                    .foregroundColor(.accentColor)
+                Label(selectedLevel?.progress ?? .init(),
+                      systemImage: "checkmark.circle")
+            }
+            .frame(width: 58, height: 24)
+            .padding()
+            Text("\(store.nextLevelMessage)")
         }
-        .frame(width: 58, height: 24)
-        .padding()
     }
     
     // MARK: - Private Properties
@@ -70,6 +74,7 @@ struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
         DetailScreen(selectedLevel: .constant(Level.sample))
             .frame(width: 600)
+            .environmentObject(Store())
     }
 }
 #endif

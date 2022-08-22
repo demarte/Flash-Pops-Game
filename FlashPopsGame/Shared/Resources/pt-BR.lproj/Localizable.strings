@@ -9,3 +9,5 @@
 "scoreText" = "Pontos:";
 "levelText" = "Nível:";
 "guessTheTitle" = "Adivinhe o título";
+"levelMessage" = "pontos restantes para desbloquear o nível:";
+"feedbackMessage" = "Parabéns! Você conseguiu!";

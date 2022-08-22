@@ -7,6 +7,10 @@
 
 import Foundation
 
+// MARK: - Constants
+
+let pointsToUnlockNextLevel = [15, 30, 50, 80]
+
 struct MediaCategory: Codable, Identifiable {
     
     // MARK: - Properties
@@ -17,6 +21,18 @@ struct MediaCategory: Codable, Identifiable {
     var levels: [Level]
     var score: Int
     var isLocked: Bool
+    
+    var nextLockedLevelIndex: Int? {
+        levels.firstIndex(where: { $0.isLocked })
+    }
+    
+    mutating func increaseScore() {
+        score += 1
+        if pointsToUnlockNextLevel.contains(score),
+           let index = nextLockedLevelIndex {
+            levels[index].isLocked = false
+        }
+    }
 }
 
 // MARK: - Equatable

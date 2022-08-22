@@ -16,7 +16,9 @@ struct ContentView: View {
         NavigationView {
             Sidebar(categories: store.categories,
                     selection: selection)
+                .environmentObject(store)
             DetailScreen(selectedLevel: selectedLevel)
+                .environmentObject(store)
         }
         .frame(minWidth: 700,
                idealWidth: 1000,

@@ -12,6 +12,8 @@ enum Localizable: String {
     case scoreText
     case levelText
     case guessTheTitle
+    case levelMessage
+    case feedbackMessage
     
     var localized: String {
         NSLocalizedString(rawValue, comment: .init())

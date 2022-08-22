@@ -13,10 +13,41 @@ final class Store: ObservableObject {
     
     @Published var categories: [MediaCategory] = []
     
+    var score: Int {
+        categories.reduce(0, { total, category in
+            category.score + total
+        })
+    }
+    
+    var nextLevelMessage: String {
+        if let level = nextLevelAvailableToUnlock {
+            return "\(remainingPointsToNextLevel) \(Localizable.levelMessage.localized) \(level.id)"
+        }
+        return Localizable.feedbackMessage.localized
+    }
+    
     // MARK: - Private Properties
     
     private let fileService: FileServiceProtocol
     private var levels: [Level] = []
+    
+    private var nextLevelAvailableToUnlock: Level? {
+        for category in categories {
+            if let index = category.nextLockedLevelIndex {
+                return category.levels[index]
+            }
+        }
+        return nil
+    }
+    
+    private var remainingPointsToNextLevel: Int {
+        for points in pointsToUnlockNextLevel {
+            if score < points {
+                return points - score
+            }
+        }
+        return .zero
+    }
     
     // MARK: - Initializer
     
@@ -39,7 +70,7 @@ final class Store: ObservableObject {
         for index in categories.indices {
             if let levelIndex = categories[index].levels.firstIndex(where: { $0.id == level.id }) {
                 categories[index].levels[levelIndex] = level
-                categories[index].score += 1
+                categories[index].increaseScore()
                 fileService.saveGame(with: categories)
                 break
             }

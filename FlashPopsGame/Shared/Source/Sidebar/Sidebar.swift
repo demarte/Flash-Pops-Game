@@ -13,12 +13,7 @@ struct Sidebar: View {
     
     let categories: [MediaCategory]
     @Binding var selection: Level.ID?
-    
-    private var score: Int {
-        categories.reduce(0, { total, category in
-            category.score + total
-        })
-    }
+    @EnvironmentObject var store: Store
     
     // MARK: - Body
     
@@ -41,7 +36,7 @@ struct Sidebar: View {
     private var scoreView: some View {
         ZStack(alignment: .leading) {
             Color.black.opacity(0.15)
-            Text("\(Localizable.scoreText.localized) \(score)")
+            Text("\(Localizable.scoreText.localized) \(store.score)")
                 .padding(.leading)
         }
         .frame(height: 28)
@@ -64,6 +59,12 @@ struct Sidebar: View {
                     Image(systemName: "checkmark.seal.fill")
                         .foregroundColor(.green)
                 }
+            }
+        }
+        .onChange(of: selection) { [oldSelection = selection] newSelection in
+            if let level = levels.first(where: { $0.id == newSelection }),
+               level.isLocked {
+                selection = oldSelection
             }
         }
     }
