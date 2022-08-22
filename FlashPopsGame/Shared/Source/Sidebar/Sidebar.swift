@@ -66,7 +66,6 @@ struct Sidebar: View {
                         .foregroundColor(.green)
                 }
             }
-//            .disabled(true)
         }
     }
 }

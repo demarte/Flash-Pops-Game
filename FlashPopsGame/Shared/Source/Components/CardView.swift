@@ -71,7 +71,7 @@ struct CardView: View {
     
     private var cardBackgroundView: some View {
         ZStack {
-            Color.accentColor
+            Color.cardColor
         }
     }
     
