@@ -9,5 +9,5 @@
 "scoreText" = "Score:";
 "levelText" = "Level:";
 "guessTheTitle" = "Guess the title";
-"levelMessage" = "points remaining to unlock next level:";
+"levelMessage" = "points remaining to unlock next level";
 "feedbackMessage" = "Congratulations! You got it!";
