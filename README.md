@@ -15,5 +15,5 @@
 
 #### Intial flows
 
-The app has 2 initial flows. The first flow, when the user never played before. In this case the data is loaded from a JSON file. The second flow occours when the user made 1 point at least. In this case the data will be loaded from [UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults), a simple key-value pair database.
+The app has 2 initial flows. The first flow occurs when the user never played before. In this case the data is loaded from a JSON file. The second flow occurs when the user made 1 point at least. In this case the data will be loaded from [UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults), a simple key-value pair database. For each new point, the app database (UserDefaults) will be updated. 
 
