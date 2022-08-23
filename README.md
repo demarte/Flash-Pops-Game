@@ -1,5 +1,5 @@
 # Flash Pops Game
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <https://www.youtube.com/watch?v=zxn1yEWZDjA>
 #### Description:
 
 ##### What is Flash Pops Game?
@@ -17,3 +17,4 @@
 
 The app has 2 initial flows. The first flow occurs when the user never played before. In this case the data is loaded from a JSON file. The second flow occurs when the user made 1 point at least. In this case the data will be loaded from [UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults), a simple key-value pair database. For each new point, the app database (UserDefaults) will be updated. 
 
+<img width="1291" alt="Screen Shot 2022-08-23 at 1 57 22 PM" src="https://user-images.githubusercontent.com/19983507/186218402-7763c00a-f674-45de-a4c2-66a55e163d58.png">
