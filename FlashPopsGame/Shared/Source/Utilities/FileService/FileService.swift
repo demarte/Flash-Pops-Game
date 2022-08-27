@@ -24,11 +24,11 @@ struct FileService: FileServiceProtocol {
     
     func loadData() -> [MediaCategory] {
         guard let data = UserDefaults.standard.object(forKey: UserDefaultsKey.flashPopsGameData.rawValue) as? Data,
-           let medias = try? decoder.decode([MediaCategory].self, from: data) else {
-          return loadFromJSON()
+              let categories = try? decoder.decode([MediaCategory].self, from: data) else {
+            return loadFromJSON()
         }
         
-        return medias
+        return addNewCategoriesFromJSON(categories)
     }
     
     func saveGame(with mediaCategories: [MediaCategory]) {
@@ -48,5 +48,21 @@ struct FileService: FileServiceProtocol {
         }
         
         return medias
+    }
+    
+    private func addNewCategoriesFromJSON(_ categories: [MediaCategory]) -> [MediaCategory] {
+        var newCategories = categories
+        let jsonData = loadFromJSON()
+
+        for index in jsonData.indices {
+            let currentLevelsCount = categories[index].levels.count
+            let jsonLevelsCount = jsonData[index].levels.count
+            if currentLevelsCount != jsonLevelsCount {
+                let diffLength = jsonLevelsCount - currentLevelsCount
+                let newLevels = jsonData[index].levels.suffix(diffLength)
+                newCategories[index].levels.append(contentsOf: newLevels)
+            }
+        }
+        return newCategories
     }
 }
