@@ -17,6 +17,13 @@ struct Media: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case songUrl, title, posterPath, status
     }
+    
+    func compare(_ text: String) -> Bool {
+        guard status != .success,
+              text.count == title.count else { return false }
+        
+        return text.lowercased() == title.lowercased()
+    }
 }
 
 enum MediaStatus: Int, Codable {

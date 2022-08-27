@@ -84,10 +84,9 @@ struct CardView: View {
     }
     
     private func onChange(_ text: String) {
-        guard media.status == .notAnswerd,
-              text.lowercased() == media.title.lowercased() else { return }
-            
-        onChange?(media)
+        if media.compare(text) {
+            onChange?(media)
+        }
     }
 }
 
