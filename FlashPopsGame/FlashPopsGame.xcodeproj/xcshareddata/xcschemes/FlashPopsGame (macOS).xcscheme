@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,6 +36,16 @@
                BlueprintIdentifier = "226CBD5F288C14F500CCD797"
                BuildableName = "Tests macOS.xctest"
                BlueprintName = "Tests macOS"
+               ReferencedContainer = "container:FlashPopsGame.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "22228E2B28BA6EC800AE7F00"
+               BuildableName = "FlashPopsGameTests.xctest"
+               BlueprintName = "FlashPopsGameTests"
                ReferencedContainer = "container:FlashPopsGame.xcodeproj">
             </BuildableReference>
          </TestableReference>
