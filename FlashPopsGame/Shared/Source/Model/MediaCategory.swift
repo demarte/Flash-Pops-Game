@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Constants
 
-let pointsToUnlockNextLevel = [15, 30, 50, 80]
+let pointsToUnlockNextLevel = [15, 45, 75, 110]
 
 struct MediaCategory: Codable, Identifiable {
     
