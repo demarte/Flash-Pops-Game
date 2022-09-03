@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22160FB728A81AA40045F408 /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22160FB628A81AA40045F408 /* PlayButtonView.swift */; };
-		22160FB828A81AA40045F408 /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22160FB628A81AA40045F408 /* PlayButtonView.swift */; };
-		22160FBA28A829C00045F408 /* CardOnHoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22160FB928A829C00045F408 /* CardOnHoverView.swift */; };
-		22160FBB28A829C00045F408 /* CardOnHoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22160FB928A829C00045F408 /* CardOnHoverView.swift */; };
 		2219D61A28B108770084A608 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 2219D61928B108770084A608 /* Credits.html */; };
 		22228E3928BA6EF000AE7F00 /* MediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22228E3828BA6EF000AE7F00 /* MediaTests.swift */; };
 		2226A4CB28A7E44D005876C8 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226A4CA28A7E44D005876C8 /* UserDefaultsKey.swift */; };
@@ -21,7 +17,6 @@
 		224E02FC28B407DA00F0E314 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E02FA28B407DA00F0E314 /* Localizable.swift */; };
 		224E030028B4096E00F0E314 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 224E030328B4096E00F0E314 /* Localizable.strings */; };
 		224E030128B4096E00F0E314 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 224E030328B4096E00F0E314 /* Localizable.strings */; };
-		225B1A49288F420E00DB0A2D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF9491288F413A008C2606 /* CardView.swift */; };
 		226CBD68288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */; };
 		226CBD69288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD40288C14F300CCD797 /* FlashPopsGameApp.swift */; };
 		226CBD6A288C14F500CCD797 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBD41288C14F300CCD797 /* ContentView.swift */; };
@@ -48,11 +43,20 @@
 		226CBDB7288C5CE500CCD797 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CBDB5288C5CE500CCD797 /* AudioPlayerView.swift */; };
 		227D729728C37C400000D64B /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729628C37C400000D64B /* DisplayMode.swift */; };
 		227D729928C380D70000D64B /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729828C380D70000D64B /* Toolbar.swift */; };
-		22AF9492288F413A008C2606 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AF9491288F413A008C2606 /* CardView.swift */; };
+		227D729F28C3BE040000D64B /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729A28C3BE040000D64B /* PlayButtonView.swift */; };
+		227D72A028C3BE040000D64B /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729A28C3BE040000D64B /* PlayButtonView.swift */; };
+		227D72A128C3BE040000D64B /* CardOnHoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729B28C3BE040000D64B /* CardOnHoverView.swift */; };
+		227D72A228C3BE040000D64B /* CardOnHoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729B28C3BE040000D64B /* CardOnHoverView.swift */; };
+		227D72A328C3BE040000D64B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729C28C3BE040000D64B /* CardView.swift */; };
+		227D72A428C3BE040000D64B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729C28C3BE040000D64B /* CardView.swift */; };
+		227D72A528C3BE040000D64B /* CardErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729D28C3BE040000D64B /* CardErrorView.swift */; };
+		227D72A628C3BE040000D64B /* CardErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729D28C3BE040000D64B /* CardErrorView.swift */; };
+		227D72A728C3BE040000D64B /* MediaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729E28C3BE040000D64B /* MediaTextField.swift */; };
+		227D72A828C3BE040000D64B /* MediaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D729E28C3BE040000D64B /* MediaTextField.swift */; };
+		227D72AF28C3BE6E0000D64B /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D72AE28C3BE6E0000D64B /* TextFieldClearButton.swift */; };
+		227D72B028C3BE6E0000D64B /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227D72AE28C3BE6E0000D64B /* TextFieldClearButton.swift */; };
 		22CA9215289EDF7E0020ABFE /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA9214289EDF7E0020ABFE /* CacheAsyncImage.swift */; };
 		22CA9216289EDF7E0020ABFE /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA9214289EDF7E0020ABFE /* CacheAsyncImage.swift */; };
-		22CA921A289EE6380020ABFE /* CardErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA9219289EE6380020ABFE /* CardErrorView.swift */; };
-		22CA921B289EE6380020ABFE /* CardErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA9219289EE6380020ABFE /* CardErrorView.swift */; };
 		22CB1D3428B3F2FF009D9933 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB1D3328B3F2FF009D9933 /* Color+Extension.swift */; };
 		22CB1D3528B3F2FF009D9933 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB1D3328B3F2FF009D9933 /* Color+Extension.swift */; };
 		22E868CC28C3728A00F3BAEF /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E868CB28C3728A00F3BAEF /* Menus.swift */; };
@@ -69,8 +73,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22160FB628A81AA40045F408 /* PlayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonView.swift; sourceTree = "<group>"; };
-		22160FB928A829C00045F408 /* CardOnHoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOnHoverView.swift; sourceTree = "<group>"; };
 		2219D61928B108770084A608 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		22228E2C28BA6EC800AE7F00 /* FlashPopsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashPopsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22228E3728BA6EEF00AE7F00 /* FlashPopsGameTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlashPopsGameTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -98,9 +100,13 @@
 		226CBDB5288C5CE500CCD797 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		227D729628C37C400000D64B /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 		227D729828C380D70000D64B /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
-		22AF9491288F413A008C2606 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		227D729A28C3BE040000D64B /* PlayButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButtonView.swift; sourceTree = "<group>"; };
+		227D729B28C3BE040000D64B /* CardOnHoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardOnHoverView.swift; sourceTree = "<group>"; };
+		227D729C28C3BE040000D64B /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		227D729D28C3BE040000D64B /* CardErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardErrorView.swift; sourceTree = "<group>"; };
+		227D729E28C3BE040000D64B /* MediaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaTextField.swift; sourceTree = "<group>"; };
+		227D72AE28C3BE6E0000D64B /* TextFieldClearButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 		22CA9214289EDF7E0020ABFE /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
-		22CA9219289EE6380020ABFE /* CardErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardErrorView.swift; sourceTree = "<group>"; };
 		22CB1D3328B3F2FF009D9933 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		22E868CB28C3728A00F3BAEF /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,6 +248,7 @@
 		226CBD84288C1EBD00CCD797 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				227D72AD28C3BE5F0000D64B /* Modifiers */,
 				22E868CA28C3725400F3BAEF /* Controls */,
 				22CB1D3228B3F2E6009D9933 /* Extensions */,
 				22AF948E288F410E008C2606 /* Components */,
@@ -307,13 +314,46 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		227D72A928C3BE070000D64B /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				227D729C28C3BE040000D64B /* CardView.swift */,
+				227D729B28C3BE040000D64B /* CardOnHoverView.swift */,
+				227D729D28C3BE040000D64B /* CardErrorView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		227D72AA28C3BE180000D64B /* PlayButton */ = {
+			isa = PBXGroup;
+			children = (
+				227D729A28C3BE040000D64B /* PlayButtonView.swift */,
+			);
+			path = PlayButton;
+			sourceTree = "<group>";
+		};
+		227D72AB28C3BE240000D64B /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				227D729E28C3BE040000D64B /* MediaTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		227D72AD28C3BE5F0000D64B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				227D72AE28C3BE6E0000D64B /* TextFieldClearButton.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		22AF948E288F410E008C2606 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				22AF9491288F413A008C2606 /* CardView.swift */,
-				22CA9219289EE6380020ABFE /* CardErrorView.swift */,
-				22160FB628A81AA40045F408 /* PlayButtonView.swift */,
-				22160FB928A829C00045F408 /* CardOnHoverView.swift */,
+				227D72AB28C3BE240000D64B /* TextField */,
+				227D72AA28C3BE180000D64B /* PlayButton */,
+				227D72A928C3BE070000D64B /* Card */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -495,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227D72A528C3BE040000D64B /* CardErrorView.swift in Sources */,
 				224C6133288CA9DA0070768D /* Networker.swift in Sources */,
 				22CB1D3428B3F2FF009D9933 /* Color+Extension.swift in Sources */,
 				226CBD97288C214600CCD797 /* Level.swift in Sources */,
@@ -504,15 +545,16 @@
 				226CBD6A288C14F500CCD797 /* ContentView.swift in Sources */,
 				226CBD7E288C180100CCD797 /* Sidebar.swift in Sources */,
 				22CA9215289EDF7E0020ABFE /* CacheAsyncImage.swift in Sources */,
+				227D72AF28C3BE6E0000D64B /* TextFieldClearButton.swift in Sources */,
 				226CBD9E288C232300CCD797 /* FileService.swift in Sources */,
+				227D72A328C3BE040000D64B /* CardView.swift in Sources */,
 				2226A4CB28A7E44D005876C8 /* UserDefaultsKey.swift in Sources */,
 				226CBDB6288C5CE500CCD797 /* AudioPlayerView.swift in Sources */,
+				227D72A128C3BE040000D64B /* CardOnHoverView.swift in Sources */,
+				227D729F28C3BE040000D64B /* PlayButtonView.swift in Sources */,
+				227D72A728C3BE040000D64B /* MediaTextField.swift in Sources */,
 				226CBD68288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */,
 				224E02FB28B407DA00F0E314 /* Localizable.swift in Sources */,
-				22160FBA28A829C00045F408 /* CardOnHoverView.swift in Sources */,
-				22CA921A289EE6380020ABFE /* CardErrorView.swift in Sources */,
-				22160FB728A81AA40045F408 /* PlayButtonView.swift in Sources */,
-				22AF9492288F413A008C2606 /* CardView.swift in Sources */,
 				226CBD81288C1EA600CCD797 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,14 +564,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				224C6134288CA9DA0070768D /* Networker.swift in Sources */,
+				227D72B028C3BE6E0000D64B /* TextFieldClearButton.swift in Sources */,
 				227D729928C380D70000D64B /* Toolbar.swift in Sources */,
 				22CB1D3528B3F2FF009D9933 /* Color+Extension.swift in Sources */,
 				22E868CC28C3728A00F3BAEF /* Menus.swift in Sources */,
 				226CBD98288C214600CCD797 /* Level.swift in Sources */,
+				227D72A628C3BE040000D64B /* CardErrorView.swift in Sources */,
 				226CBD95288C20F900CCD797 /* MediaCategory.swift in Sources */,
+				227D72A228C3BE040000D64B /* CardOnHoverView.swift in Sources */,
+				227D72A428C3BE040000D64B /* CardView.swift in Sources */,
 				226CBD9B288C218700CCD797 /* Media.swift in Sources */,
+				227D72A028C3BE040000D64B /* PlayButtonView.swift in Sources */,
 				226CBDA3288C2D8000CCD797 /* DetailScreen.swift in Sources */,
 				226CBD6B288C14F500CCD797 /* ContentView.swift in Sources */,
+				227D72A828C3BE040000D64B /* MediaTextField.swift in Sources */,
 				226CBD7F288C180100CCD797 /* Sidebar.swift in Sources */,
 				22CA9216289EDF7E0020ABFE /* CacheAsyncImage.swift in Sources */,
 				226CBD9F288C232300CCD797 /* FileService.swift in Sources */,
@@ -538,10 +586,6 @@
 				226CBD69288C14F500CCD797 /* FlashPopsGameApp.swift in Sources */,
 				224E02FC28B407DA00F0E314 /* Localizable.swift in Sources */,
 				227D729728C37C400000D64B /* DisplayMode.swift in Sources */,
-				22160FBB28A829C00045F408 /* CardOnHoverView.swift in Sources */,
-				22CA921B289EE6380020ABFE /* CardErrorView.swift in Sources */,
-				22160FB828A81AA40045F408 /* PlayButtonView.swift in Sources */,
-				225B1A49288F420E00DB0A2D /* CardView.swift in Sources */,
 				226CBD82288C1EA600CCD797 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

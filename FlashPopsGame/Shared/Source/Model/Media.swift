@@ -18,11 +18,13 @@ struct Media: Codable, Identifiable {
         case songUrl, title, posterPath, status
     }
     
-    func compare(_ text: String) -> Bool {
-        guard status != .success,
-              text.count == title.count else { return false }
+    func compare(_ text: String) -> MediaStatus {
+        guard !text.isEmpty else { return .notAnswerd }
         
-        return text.lowercased() == title.lowercased()
+        if text.lowercased() == title.lowercased() {
+            return .success
+        }
+        return .almost
     }
 }
 

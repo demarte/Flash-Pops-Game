@@ -18,7 +18,6 @@ struct CardView: View {
     var media: Media
     let onChange: ((Media) -> Void)?
     @State private var onHover: Bool = false
-    @State private var inputText: String = .init()
     
     // MARK: - Body
     
@@ -36,11 +35,8 @@ struct CardView: View {
             .aspectRatio(3/4, contentMode: .fit)
             .cornerRadius(8)
             .onHover(perform: hanldeHover)
-            TextField(Localizable.guessTheTitle.localized,
-                      text: $inputText)
-                .textFieldStyle(.roundedBorder)
-                .frame(height: 30)
-                .onChange(of: inputText, perform: onChange)
+            MediaTextField(media: media,
+                           onChange: onChange)
         }
     }
     
@@ -84,7 +80,8 @@ struct CardView: View {
     }
     
     private func onChange(_ text: String) {
-        if media.compare(text) {
+        let status = media.compare(text)
+        if status == .success {
             onChange?(media)
         }
     }
