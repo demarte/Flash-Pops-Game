@@ -23,7 +23,12 @@ struct FileService: FileServiceProtocol {
     // MARK: - Public Methods
     
     func loadData(newGame: Bool) -> [MediaCategory] {
-        newGame ? loadFromJSON() : loadFromUserDefaults()
+        if newGame {
+            UserDefaults.standard.removeObject(forKey: UserDefaultsKey.flashPopsGameData.rawValue)
+            return loadFromJSON()
+        } else {
+            return loadFromUserDefaults()
+        }
     }
     
     func saveGame(with mediaCategories: [MediaCategory]) {
