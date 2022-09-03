@@ -14,6 +14,12 @@ enum Localizable: String {
     case guessTheTitle
     case levelMessage
     case feedbackMessage
+    case newGameButton
+    case newGameMessage
+    case displayMenu
+    case displayItem
+    case cancelButton
+    case okButton
     
     var localized: String {
         NSLocalizedString(rawValue, comment: .init())

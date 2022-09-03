@@ -15,6 +15,10 @@ struct Sidebar: View {
     @Binding var selection: Level.ID?
     @EnvironmentObject var store: Store
     
+    // MARK: - Private Properties
+    
+    @State private var showingAlert = false
+    
     // MARK: - Body
     
     var body: some View {
@@ -28,10 +32,28 @@ struct Sidebar: View {
                 }
             }
             .listStyle(.sidebar)
+            newGameButton
+            Spacer()
         }
     }
     
     // MARK: - Private Methods
+    
+    private var newGameButton: some View {
+        Button(Localizable.newGameButton.localized) {
+            showingAlert = true
+        }
+        .alert(Localizable.newGameMessage.localized,
+               isPresented: $showingAlert) {
+            Button("Ok") {
+                showingAlert = false
+                store.newGame()
+            }
+            Button("Cancel", role: .cancel) {
+                showingAlert = false
+            }
+        }
+    }
     
     private var scoreView: some View {
         ZStack(alignment: .leading) {

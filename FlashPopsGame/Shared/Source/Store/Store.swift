@@ -55,13 +55,19 @@ final class Store: ObservableObject {
     /// - Parameter fileService: A type that conforms to `FileServiceProtocol`
     init(fileService: FileServiceProtocol = FileService()) {
         self.fileService = fileService
-        finishInit()
+        loadData()
+    }
+    
+    // MARK: - Public Methods
+    
+    func newGame() {
+        loadData(newGame: true)
     }
     
     // MARK: - Private Methods
     
-    private func finishInit() {
-        let data = fileService.loadData()
+    private func loadData(newGame: Bool = false) {
+        let data = fileService.loadData(newGame: newGame)
         levels = data.flatMap { $0.levels }
         categories = data
     }

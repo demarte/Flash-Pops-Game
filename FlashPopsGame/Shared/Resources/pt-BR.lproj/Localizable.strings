@@ -11,3 +11,9 @@
 "guessTheTitle" = "Adivinhe o título";
 "levelMessage" = "pontos restantes para desbloquear o nível";
 "feedbackMessage" = "Parabéns! Você conseguiu!";
+"newGameButton" = "Novo jogo";
+"newGameMessage" = "Tem certeza que deseja iniciar um novo jogo?";
+"displayMenu" = "Visual";
+"displayItem" = "Aparência";
+"cancelButton" = "Cancelar";
+"okButton" = "Ok";

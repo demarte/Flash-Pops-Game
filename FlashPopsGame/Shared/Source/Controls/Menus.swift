@@ -14,14 +14,8 @@ struct Menus: Commands {
     var body: some Commands {
         SidebarCommands()
         ToolbarCommands()
-        CommandGroup(replacing: .newItem) {
-            Button("New Game") {
-                
-            }
-            .keyboardShortcut("n", modifiers: [.command])
-        }
-        CommandMenu("Display") {
-            Picker("Appearance", selection: $displayMode) {
+        CommandMenu(Localizable.displayMenu.localized) {
+            Picker(Localizable.displayItem.localized, selection: $displayMode) {
                 ForEach(DisplayMode.allCases, id: \.self) {
                     Text($0.rawValue)
                         .tag($0)

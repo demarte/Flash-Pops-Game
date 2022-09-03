@@ -8,7 +8,7 @@
 import Foundation
 
 protocol FileServiceProtocol {
-    func loadData() -> [MediaCategory]
+    func loadData(newGame: Bool) -> [MediaCategory]
     func saveGame(with mediaCategories: [MediaCategory])
 }
 
@@ -22,13 +22,8 @@ struct FileService: FileServiceProtocol {
     
     // MARK: - Public Methods
     
-    func loadData() -> [MediaCategory] {
-        guard let data = UserDefaults.standard.object(forKey: UserDefaultsKey.flashPopsGameData.rawValue) as? Data,
-              let categories = try? decoder.decode([MediaCategory].self, from: data) else {
-            return loadFromJSON()
-        }
-        
-        return addNewCategoriesFromJSON(categories)
+    func loadData(newGame: Bool) -> [MediaCategory] {
+        newGame ? loadFromJSON() : loadFromUserDefaults()
     }
     
     func saveGame(with mediaCategories: [MediaCategory]) {
@@ -48,6 +43,14 @@ struct FileService: FileServiceProtocol {
         }
         
         return medias
+    }
+    
+    private func loadFromUserDefaults() -> [MediaCategory] {
+        guard let data = UserDefaults.standard.object(forKey: UserDefaultsKey.flashPopsGameData.rawValue) as? Data,
+              let categories = try? decoder.decode([MediaCategory].self, from: data) else {
+            return loadFromJSON()
+        }
+        return addNewCategoriesFromJSON(categories)
     }
     
     private func addNewCategoriesFromJSON(_ categories: [MediaCategory]) -> [MediaCategory] {
