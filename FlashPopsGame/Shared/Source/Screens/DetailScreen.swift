@@ -12,7 +12,6 @@ struct DetailScreen: View {
     // MARK: Public Properties
     
     @Binding var selectedLevel: Level?
-    @EnvironmentObject var store: Store
     
     // MARK: Private Properties
     
@@ -26,7 +25,6 @@ struct DetailScreen: View {
     
     var body: some View {
         VStack {
-            levelProgress
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(selectedLevel?.medias ?? []) { media in
@@ -43,23 +41,7 @@ struct DetailScreen: View {
         AudioPlayerView(media: $selectedMedia)
     }
     
-    // MARK: - Private Properties
-    
-    private var levelProgress: some View {
-        HStack {
-            ZStack {
-                RoundedRectangle(cornerRadius: 8)
-                    .foregroundColor(.accentColor)
-                Label(selectedLevel?.progress ?? .init(),
-                      systemImage: "checkmark.circle")
-            }
-            .frame(width: 58, height: 24)
-            .padding()
-            Text("\(store.nextLevelMessage)")
-        }
-    }
-    
-    // MARK: - Private Properties
+    // MARK: - Private Methods
     
     private func onChange(_ media: Media) {
         guard let index = selectedLevel?.medias.firstIndex(where: { $0.id == media.id }) else { return }
@@ -74,7 +56,6 @@ struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
         DetailScreen(selectedLevel: .constant(Level.sample))
             .frame(width: 600)
-            .environmentObject(Store())
     }
 }
 #endif

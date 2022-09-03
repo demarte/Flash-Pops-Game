@@ -18,7 +18,6 @@ struct ContentView: View {
                     selection: selection)
                 .environmentObject(store)
             DetailScreen(selectedLevel: selectedLevel)
-                .environmentObject(store)
         }
         .frame(minWidth: 700,
                idealWidth: 1000,
@@ -26,7 +25,13 @@ struct ContentView: View {
                minHeight: 400,
                idealHeight: 800,
                maxHeight: .infinity)
+        .toolbar {
+            Toolbar(selectedLevel: selectedLevel,
+                    nextLevelMessage: store.nextLevelMessage)
+        }
     }
+    
+    // MARK: - Private Properties
     
     private var selection: Binding<Level.ID?> {
         Binding(get: { selectedLevelID }, set: { selectedLevelID = $0 })

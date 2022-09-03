@@ -77,6 +77,7 @@ struct Sidebar_Previews: PreviewProvider {
                 selection: .constant(0))
             .preferredColorScheme(.light)
             .frame(width: 200)
+            .environmentObject(Store())
     }
 }
 #endif

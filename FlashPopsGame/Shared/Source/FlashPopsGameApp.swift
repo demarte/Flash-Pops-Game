@@ -11,11 +11,21 @@ import SwiftUI
 struct FlashPopsGameApp: App {
     
     @StateObject private var store = Store()
+    @AppStorage("displayMode") var displayMode: DisplayMode = .auto
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(store)
+                .onAppear {
+                    DisplayMode.changeDisplayMode(to: displayMode)
+                }
+                .onChange(of: displayMode) { newValue in
+                    DisplayMode.changeDisplayMode(to: newValue)
+                }
+        }
+        .commands {
+            Menus()
         }
     }
 }
