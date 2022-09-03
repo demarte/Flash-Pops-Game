@@ -29,6 +29,8 @@ struct AudioPlayerView: View {
                 Task {
                     await fetch(mediaURL: value.songUrl)
                 }
+            } else {
+                play()
             }
         }
     }

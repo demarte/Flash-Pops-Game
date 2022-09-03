@@ -30,10 +30,10 @@ struct DetailScreen: View {
                     ForEach(selectedLevel?.medias ?? []) { media in
                         CardView(media: media,
                                  onChange: onChange)
-                            .onTapGesture {
-                                selectedMedia = media
-                            }
-                            .frame(width: 160)
+                        .onTapGesture {
+                            onTapMedia(media)
+                        }
+                        .frame(width: 160)
                     }
                 }
             }
@@ -42,6 +42,14 @@ struct DetailScreen: View {
     }
     
     // MARK: - Private Methods
+    
+    private func onTapMedia(_ media: Media) {
+        if media == selectedMedia {
+            selectedMedia = nil
+        } else {
+            selectedMedia = media
+        }
+    }
     
     private func onChange(_ media: Media) {
         guard let index = selectedLevel?.medias.firstIndex(where: { $0.id == media.id }) else { return }
