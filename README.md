@@ -1,5 +1,4 @@
 # Flash Pops Game
-#### Video Demo:  <https://www.youtube.com/watch?v=zxn1yEWZDjA>
 #### Description:
 
 ##### What is Flash Pops Game?
